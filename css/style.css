@@ -1,6 +1,11 @@
-h1{
+header h1{
     text-align: center;
     position: relative;
+    margin-bottom: 0px;
+}
+.countdown{
+    text-align: center;
+    font-size: 64px;
 }
 .tombol{
     text-align: center;
@@ -11,3 +16,21 @@ h1{
     padding: 10px 40px 10px 40px;
     border-color: transparent;
 }
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.countdown li{
+    display: inline-block;
+    font-size: 15px;
+    list-style-type: none;
+    padding: 1px;
+}
+  
+#days, #hours, #minutes, #seconds {
+    display: block;
+    font-size: 50px;
+    margin: 15px;
+}
+  

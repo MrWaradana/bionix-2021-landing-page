@@ -22,10 +22,10 @@
 <body>
     <!--navbar-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="collapse-target">
+        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#collapse-target">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapse_target">
+        <div class="collapse navbar-collapse" id="collapse-target">
             <div class="navbar-text">ISE</div>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -46,19 +46,28 @@
             </ul>
         </div>
     </nav>
-
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <h1>BIONIX ends on 22 December 2020 at 23:59 WIB</h1>
+    <!--Header-->
+    <header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>BIONIX ends on 22 December 2020 at 23:59 WIB</h1>
+            </div>
         </div>
-    </div>
+        <div class="countdown">
+            <li><span id="days">00</span> Day</li>
+            <li><span id="hours">00</span> Hour</li>
+            <li><span id="minutes">00</span> Minute</li>
+            <li><span id="seconds">00</span> Second</li>
+        </div>
+        <div class="tombol">
+            <a href="#" target="_blank">
+                <button type="button" class="button">Apply now</button>
+            </a>
+        </div>
+    </header>
 
-    <div class="tombol">
-        <a href="#" target="_blank">
-            <button type="button" class="button">Apply now</button>
-        </a>
-    </div>
+    <!--Js-->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
