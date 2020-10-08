@@ -1,5 +1,13 @@
-nav a{
-    font-family: 'Source Sans Pro';
-    font-style: normal;
+h1{
     text-align: center;
+    position: relative;
+}
+.tombol{
+    text-align: center;
+}
+.button{
+    background: linear-gradient(0deg, #055C5C -64.71%, #B0EDEB 137.63%);
+    border-radius: 22px;
+    padding: 10px 40px 10px 40px;
+    border-color: transparent;
 }
