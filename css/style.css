@@ -1,83 +1,113 @@
 /*Font*/
 @font-face {
-    font-family: 'Source Sans Pro Regular';
-    src: url('../fonts/SourceSansPro-Regular.ttf');
+  font-family: "Source Sans Pro Regular";
+  src: url("../fonts/SourceSansPro-Regular.ttf");
 }
 @font-face {
-    font-family: 'Roboto Bold';
-    src: url('../fonts/Roboto-Bold.ttf');
+  font-family: "Roboto Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
 }
-@font-face{
-    font-family: 'Fredoka One';
-    src: url('../fonts/FredokaOne-Regular.ttf')
+@font-face {
+  font-family: "Fredoka One";
+  src: url("../fonts/FredokaOne-Regular.ttf");
 }
 /*general*/
-header h1{
-    text-align: center;
-    position: relative;
-    margin-bottom: 0px;
-    font-family: "Source Sans Pro Regular";
-    font-style: normal;
-    font-weight: bold;
+.bg-gradient {
+  background: rgb(82, 181, 136);
+  background: linear-gradient(
+    0deg,
+    rgba(82, 181, 136, 1) 0%,
+    rgba(244, 235, 193, 1) 100%
+  );
 }
-.countdown{
-    text-align: center;
-    font-size: 64px;
-    font-family: "Roboto Bold";
+header h1 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 0px;
+  font-family: "Source Sans Pro Regular";
+  font-style: normal;
+  font-weight: bold;
 }
-.tombol{
-    text-align: center;
-    margin-top: 15px;
+.countdown {
+  text-align: center;
+  font-size: 64px;
+  font-family: "Roboto Bold";
 }
-.button{
-    background: linear-gradient(0deg, #055C5C -64.71%, #B0EDEB 137.63%);
-    border-radius: 22px;
-    padding: 10px 40px 10px 40px;
-    border-color: transparent;
-    text-align: center;
-    font-family: "Source Sans Pro Regular";
-    font-weight: bold;
+.tombol {
+  text-align: center;
+  margin-top: 15px;
+}
+.button {
+  background: linear-gradient(0deg, #055c5c -64.71%, #b0edeb 137.63%);
+  border-radius: 22px;
+  padding: 10px 40px 10px 40px;
+  border-color: transparent;
+  text-align: center;
+  font-family: "Source Sans Pro Regular";
+  font-weight: bold;
 }
 header .container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
-.countdown li{
-    display: inline-block;
-    font-size: 15px;
-    list-style-type: none;
-    padding: 1px;
-}  
-#days, #hours, #minutes, #seconds {
-    display: block;
-    font-size: 50px;
-    margin: 15px;
-    margin-bottom: 0px;
+.countdown li {
+  display: inline-block;
+  font-size: 15px;
+  list-style-type: none;
+  padding: 1px;
 }
-.nav{
-    margin-top: 30px;
+#days,
+#hours,
+#minutes,
+#seconds {
+  display: block;
+  font-size: 50px;
+  margin: 15px;
+  margin-bottom: 0px;
 }
-.nav-link{
-    color: black;
+.nav {
+  margin-top: 30px;
 }
-#about{
-    position: relative;
-    text-align: center;
+.nav-link {
+  color: #1f355e;
 }
-#descbox-about{
-    margin-left: 20%;
-    margin-right: 20%;
+.nav-item {
+  padding-left: 3rem;
 }
-.title-heading h1{
-    font-family: "Fredoka One";
-    margin: 30px 0px;
+.nav-tabs .nav-link {
+  color: #000000;
 }
-.row h1{
-    margin-top: 60px;
+.nav-tabs .nav-link:hover {
+  border: none;
+  font-weight: bold;
 }
-#button2{
-    margin-top: 20px;
-}  
-.description p{
-    font-family: "Source Sans Pro Regular";
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+}
+.text-dark-blue {
+  color: #1f355e;
+}
+#about {
+  position: relative;
+  text-align: center;
+}
+#descbox-about {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.title-heading h1 {
+  font-family: "Fredoka One";
+  margin: 30px 0px;
+}
+.row h1 {
+  margin-top: 60px;
+}
+#button2 {
+  margin-top: 20px;
+}
+.description p {
+  font-family: "Source Sans Pro Regular";
 }
