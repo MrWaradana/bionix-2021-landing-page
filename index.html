@@ -1,153 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>BIONIX 2020</title>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Business and IT Olympiad adalah bagian dari serangkaian acara ISE! dengan konsep kompetisi tingkat nasional yang ditujukan bagi pelajar SMA/SMK dengan menggabungkan antara bisnis dan teknologi informasi. Kompetisi terbagi menjadi 4 tahap yaitu, penyisihan 1, penyisihan 2, semifinal, dan final. Adapun penyisihan dilakukan serentak secara online di seluruh Indonesia"
-    />
-    <meta
-      name="keywords"
-      content="ISE, Sistem Informasi ITS, Sistem Informasi, ITS, Olimpiade, Bisnis, TIK, Teknologi, Pameran IT, Konser, Bionix, Icon"
-    />
-    <meta name="author" content="IT Dev ISE! 2020" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.min.css" />
-    <link
-      rel="stylesheet"
-      href="fonts/fontawesome/css/fontawesome-all.min.css"
-    />
-  </head>
+<head>
+  <title>BIONIX 2020</title>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="Business and IT Olympiad adalah bagian dari serangkaian acara ISE! dengan konsep kompetisi tingkat nasional yang ditujukan bagi pelajar SMA/SMK dengan menggabungkan antara bisnis dan teknologi informasi. Kompetisi terbagi menjadi 4 tahap yaitu, penyisihan 1, penyisihan 2, semifinal, dan final. Adapun penyisihan dilakukan serentak secara online di seluruh Indonesia" />
+  <meta name="keywords"
+    content="ISE, Sistem Informasi ITS, Sistem Informasi, ITS, Olimpiade, Bisnis, TIK, Teknologi, Pameran IT, Konser, Bionix, Icon" />
+  <meta name="author" content="IT Dev ISE! 2020" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <body class="bg-gradient">
-    <!--navbar-->
-    <nav class="navbar navbar-expand-md text-dark-blue">
-      <button
-        class="navbar-toggler ml-auto"
-        data-toggle="collapse"
-        data-target="#collapse-target"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapse-target">
-        <div class="navbar-text font-weight-bold">ISE</div>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BIONIX</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ICON</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="border border-dark btn nav-link px-3 py-1 rounded-pill"
-              href="#"
-              >Sign In</a
-            >
-          </li>
-        </ul>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome-all.min.css" />
+</head>
+
+<body class="bg-gradient">
+  <!--navbar-->
+  <nav class="navbar navbar-expand-md text-dark-blue">
+    <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#collapse-target">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapse-target">
+      <div class="navbar-text font-weight-bold">ISE</div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BIONIX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ICON</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="border border-dark btn nav-link px-3 py-1 rounded-pill" href="#">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Header-->
+  <header>
+    <div class="container">
+      <div class="row justify-content-center">
+        <h1>BIONIX ends on 22 December 2020 at 23:59 WIB</h1>
       </div>
-    </nav>
+    </div>
+    <div class="countdown">
+      <li><span id="days">00</span> Day</li>
+      <li><span id="hours">00</span> Hour</li>
+      <li><span id="minutes">00</span> Minute</li>
+      <li><span id="seconds">00</span> Second</li>
+    </div>
+    <div class="tombol">
+      <a href="#" target="_blank">
+        <button type="button" class="button">Apply now</button>
+      </a>
+    </div>
+  </header>
 
-    <!--Header-->
-    <header>
-      <div class="container">
-        <div class="row justify-content-center">
-          <h1>BIONIX ends on 22 December 2020 at 23:59 WIB</h1>
+  <!--Section list-->
+  <ul class="border-0 nav nav-tabs justify-content-center" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" href="#about" data-toggle="tab" role="tab">About</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Timeline</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#prizes" data-toggle="tab" role="tab">Prizes</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" href="#contact" data-toggle="tab" role="tab">Contact</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <!--about-->
+    <section id="about" class="tab-pane fade show active full-section bgipad" role="tabpanel">
+      <div class="title">
+        <div class="title-heading">
+          <h1>What is BIONIX 2020?</h1>
         </div>
       </div>
-      <div class="countdown">
-        <li><span id="days">00</span> Day</li>
-        <li><span id="hours">00</span> Hour</li>
-        <li><span id="minutes">00</span> Minute</li>
-        <li><span id="seconds">00</span> Second</li>
+      <div id="descbox-about">
+        <div class="description">
+          <p>
+            BIONIX adalah perlombaan berskala nasional yang berhadiah FREE
+            PASS SNMPTN bagi pemenangnya dan diadakan oleh Departemen Sistem
+            Informasi ITS. BIONIX 2020 kali ini menggunakan model kompetisi
+            Business and IT Innovation Competition yang memberikan kesempatan
+            bagi peserta untuk mengeksplor ide bisnis kreatif berbasis IT
+            sesuai dengan tema yang telah ditentukan.
+          </p>
+        </div>
       </div>
       <div class="tombol">
-        <a href="#" target="_blank">
-          <button type="button" class="button">Apply now</button>
+        <a href=" #" target="_blank">
+          <button type="button" class="button" id="button2">
+            Download Guideline
+          </button>
         </a>
       </div>
-    </header>
+    </section>
 
-    <!--Section list-->
-    <ul class="border-0 nav nav-tabs justify-content-center" role="tablist">
-      <li class="nav-item" role="presentation">
-        <a class="nav-link active" href="#about" data-toggle="tab" role="tab"
-          >About</a
-        >
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#timeline" data-toggle="tab" role="tab"
-          >Timeline</a
-        >
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#prizes" data-toggle="tab" role="tab"
-          >Prizes</a
-        >
-      </li>
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#contact" data-toggle="tab" role="tab"
-          >Contact</a
-        >
-      </li>
-    </ul>
-    <div class="tab-content">
-      <!--about-->
-      <section
-        id="about"
-        class="tab-pane fade show active full-section bgipad"
-        role="tabpanel"
-      >
-        <div class="title">
-          <div class="title-heading">
-            <h1>What is BIONIX 2020?</h1>
-          </div>
-        </div>
-        <div id="descbox-about">
-          <div class="description">
-            <p>
-              BIONIX adalah perlombaan berskala nasional yang berhadiah FREE
-              PASS SNMPTN bagi pemenangnya dan diadakan oleh Departemen Sistem
-              Informasi ITS. BIONIX 2020 kali ini menggunakan model kompetisi
-              Business and IT Innovation Competition yang memberikan kesempatan
-              bagi peserta untuk mengeksplor ide bisnis kreatif berbasis IT
-              sesuai dengan tema yang telah ditentukan.
-            </p>
-          </div>
-        </div>
-        <div class="tombol">
-          <a href=" #" target="_blank">
-            <button type="button" class="button" id="button2">
-              Download Guideline
-            </button>
-          </a>
-        </div>
-      </section>
+    <!--timeline-->
+    <section id="timeline" class="tab-pane fade full-section bgipad" role="tabpanel">
 
-      <!--timeline-->
-      <section
-        id="timeline"
-        class="tab-pane fade full-section bgipad"
-        role="tabpanel"
-      ></section>
-    </div>
+    </section>
 
-    <!--Js-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/countdown.js"></script>
-  </body>
+    <!--contact-->
+    <section id="contact" class="tab-pane fade full-section bgipad" role="tabpanel">
+      <div class="title">
+        <div class="title-heading">
+          <h1>CONTACT US</h1>
+        </div>
+      </div>
+      <div class="contact-info">
+        <h1>Name 0000-0000-0000</h1>
+        <h1>Name 0000-0000-0000</h1>
+      </div>
+    </section>
+  </div>
+
+  <!--Js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/countdown.js"></script>
+</body>
+
 </html>
