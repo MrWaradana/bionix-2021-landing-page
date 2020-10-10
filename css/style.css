@@ -105,8 +105,10 @@ header .container {
   text-align: center;
   font-size: 36px;
 }
-.row h1 {
+#header-row h1 {
   margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 #button2 {
   margin-top: 20px;
@@ -120,4 +122,49 @@ header .container {
   font-family: "Source Sans Pro Regular";
   font-size: 30px;
   font-weight: bold;
+}
+#footer{
+  margin-top: 120px;
+  background-color:rgba(255, 255, 255, 0.1);
+  max-width: 100%;
+  padding: 5% 6.5% 1%;
+}
+#footer .row #footer-right h1{
+  text-align: right;
+}
+#footer h1{
+  color: white;
+  font-size: 24px;
+  font-family: "Source Sans Pro Regular";
+  font-weight: 600;
+}
+#footer p{
+  color: white;
+  font-family: "Source Sans Pro Regular";
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 312px;
+}
+.fab, .fas{
+  color: white;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.listsocmed{
+  text-align: right;
+}
+#web-ise{
+  text-align: right;
+  color: white;
+}
+#web-ise a{
+  color: white;
+  font-family: "Source Sans Pro Regular";
+  font-size: 18px;
+  vertical-align: middle;
+}
+.logo{
+  text-align: right;
+  margin-bottom: 10px;
 }
