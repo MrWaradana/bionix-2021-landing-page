@@ -11,6 +11,31 @@
   font-family: "Fredoka One";
   src: url("../fonts/FredokaOne-Regular.ttf");
 }
+ /* CSS Media Query */
+ @media (max-width: 992px) {
+  #timeline{
+    background-size: 50%, 50%;
+  }
+  #footer{
+    background-size: 40%, 40%;
+  }
+ }
+ @media (max-width: 768px) {
+   #timeline{
+     background-size: 40%, 40%;
+   }
+   #footer{
+    background-size: 40%, 40%;
+  }
+ }
+ @media (max-width: 576px) {
+   #timeline{
+     background-size: 50%, 50%;
+   }
+   #footer{
+    background-size: 40%, 40%;
+  }
+ }
 /*general*/
 .bg-gradient {
   background: rgb(82, 181, 136);
@@ -223,4 +248,9 @@ header .container {
 #timeline #timeline-img{
   text-align: center;
   padding-top: 45px;
+}
+#timeline{
+  background-image: url(../img/timeline-ornament-l.svg), url(../img/timeline-ornament-r.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
 }
