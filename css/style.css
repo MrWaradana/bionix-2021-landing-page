@@ -11,31 +11,7 @@
   font-family: "Fredoka One";
   src: url("../fonts/FredokaOne-Regular.ttf");
 }
- /* CSS Media Query */
- @media (max-width: 992px) {
-  #timeline{
-    background-size: 50%, 50%;
-  }
-  #footer{
-    background-size: 40%, 40%;
-  }
- }
- @media (max-width: 768px) {
-   #timeline{
-     background-size: 40%, 40%;
-   }
-   #footer{
-    background-size: 40%, 40%;
-  }
- }
- @media (max-width: 576px) {
-   #timeline{
-     background-size: 50%, 50%;
-   }
-   #footer{
-    background-size: 40%, 40%;
-  }
- }
+
 /*general*/
 .bg-gradient {
   background: rgb(82, 181, 136);
@@ -171,7 +147,7 @@ header .container {
   background-repeat: no-repeat;
 }
 #footer .row #footer-right h1{
-  text-align: right;
+  /* text-align: right; */
 }
 #footer h1{
   color: white;
@@ -184,7 +160,7 @@ header .container {
   font-family: "Source Sans Pro Regular";
   font-size: 18px;
   font-weight: 400;
-  max-width: 312px;
+  /* max-width: 312px; */
 }
 .fab, .fas{
   color: white;
@@ -193,10 +169,10 @@ header .container {
   margin-bottom: 10px;
 }
 .listsocmed{
-  text-align: right;
+  /* text-align: right; */
 }
 #web-ise{
-  text-align: right;
+  /* text-align: right; */
   color: white;
 }
 #web-ise a{
@@ -206,11 +182,12 @@ header .container {
   vertical-align: middle;
 }
 .logo{
-  text-align: right;
+  /* text-align: right; */
   margin-bottom: 10px;
 }
-.navbar-text{
-  font-family: "Fredoka One";
+.navbar{
+  font-family: "Source Sans Pro Regular";
+  font-weight: 600;
 }
 #prizes-box #box-title{
   text-align: center;
@@ -254,3 +231,29 @@ header .container {
   background-repeat: no-repeat;
   background-position: left bottom, right top;
 }
+ /* CSS Media Query */
+ @media (max-width: 992px) {
+  #timeline{
+    background-size: 50%, 50%;
+  }
+  #footer{
+    background-size: 40%, 40%;
+  }
+ }
+ @media (max-width: 768px) {
+   #timeline{
+     background-size: 40%, 40%;
+   }
+   #footer{
+    background-size: 40%, 40%;
+  }
+ }
+ @media (max-width: 576px) {
+   #timeline{
+     background-size: 50%, 50%;
+   }
+   #footer{
+    background-size: 40%, 40%;
+    text-align: center;
+  }
+ }

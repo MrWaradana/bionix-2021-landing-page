@@ -11,6 +11,7 @@
   <meta name="author" content="IT Dev ISE! 2020" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#F4EBC1" />
 
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
@@ -202,14 +203,14 @@
   <div class="container" id="footer">
     <div class="img"></div>
     <div class="row">
-      <div class="col">
+      <div class="col-12 col-sm-6 text-center text-sm-left">
         <h1>Information System Expo</h1>
         <h1>Breakthrough</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus nulla, sagittis et elementum a, varius
           in mauris. </p>
-        <h1 style="margin-top: 30px;">© 2020 ISE</h1>
+        <h1 class="d-none d-sm-block" style="margin-top: 30px;">© 2020 ISE</h1>
       </div>
-      <div class="col" id="footer-right">
+      <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
         <h1>Find us on social media</h1>
         <div class="listsocmed">
           <a href="https://line.me/R/ti/p/%40isexpo" target="_blank" title="Line">
@@ -226,9 +227,13 @@
           </a>
           <a href="https://www.youtube.com/channel/UCPbOX3w8G4_dwOMDNl97PTw" target="_blank" title="YouTube">
             <i class="fab fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a class="d-sm-none" href="https://ise-its.com/" target="_blank" title="Website">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+          </a>
         </div>
         <div id="web-ise">
-          <a href="https://ise-its.com/" target="_blank" title="Website">ise-its.com
+          <a class="d-none d-sm-block" href="https://ise-its.com/" target="_blank" title="Website">ise-its.com
             <i class="fas fa-globe" aria-hidden="true"></i>
           </a>
         </div>
@@ -236,6 +241,7 @@
           <img src="img/logo1.png" style="height: 102px; width: 102px;" class="img-fluid">
           <img src="img/logo-si.png" style="width: 149px; height: 53px;" class="img-fluid">
         </div>
+        <h1 class="d-sm-none" style="margin-top: 30px;">© 2020 ISE</h1>
       </div>
     </div>
   </div>
