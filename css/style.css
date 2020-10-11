@@ -220,3 +220,7 @@ header .container {
   width: 106px;
   height: 106px;
 }
+#timeline #timeline-img{
+  text-align: center;
+  padding-top: 45px;
+}
