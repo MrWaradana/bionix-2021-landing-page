@@ -42,7 +42,7 @@ header h1 {
   background: linear-gradient(0deg, #055c5c -64.71%, #b0edeb 137.63%);
   border-radius: 22px;
   padding: 10px 40px 10px 40px;
-  border-color: transparent;
+  border: none;
   text-align: center;
   font-family: "Source Sans Pro Regular";
   font-weight: bold;
@@ -231,6 +231,16 @@ header .container {
   background-repeat: no-repeat;
   background-position: left bottom, right top;
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(82, 181, 136, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+  border-color: rgb(82, 181, 136);
+} 
+.navbar-toggler:focus {
+  border-color: rgb(82, 181, 136);
+  outline: none;
+} 
  /* CSS Media Query */
  @media (max-width: 992px) {
   #timeline{
