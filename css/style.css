@@ -131,103 +131,105 @@ header .container {
   font-family: "Source Sans Pro Regular";
   font-weight: 700;
 }
-.contact-info h1{
+.contact-info h1 {
   text-align: center;
   font-family: "Source Sans Pro Regular";
   font-size: 30px;
   font-weight: bold;
 }
-#footer{
+#footer {
   margin-top: 10%;
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   max-width: 100%;
   padding: 5% 6.5% 1%;
   background-image: url(../img/ice-left.png), url(../img/ice-right.png);
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
 }
-#footer .row #footer-right h1{
+#footer .row #footer-right h1 {
   /* text-align: right; */
 }
-#footer h1{
+#footer h1 {
   color: white;
   font-size: 24px;
   font-family: "Source Sans Pro Regular";
   font-weight: 600;
 }
-#footer p{
+#footer p {
   color: white;
   font-family: "Source Sans Pro Regular";
   font-size: 18px;
   font-weight: 400;
   /* max-width: 312px; */
 }
-.fab, .fas{
+.fab,
+.fas {
   color: white;
   font-size: 40px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.listsocmed{
+.listsocmed {
   /* text-align: right; */
 }
-#web-ise{
+#web-ise {
   /* text-align: right; */
   color: white;
 }
-#web-ise a{
+#web-ise a {
   color: white;
   font-family: "Source Sans Pro Regular";
   font-size: 18px;
   vertical-align: middle;
 }
-.logo{
+.logo {
   /* text-align: right; */
   margin-bottom: 10px;
 }
-.navbar{
+.navbar {
   font-family: "Source Sans Pro Regular";
   font-weight: 600;
 }
-#prizes-box #box-title{
+#prizes-box #box-title {
   text-align: center;
   font-family: "Fredoka One";
   font-size: 32px;
   padding: 12.5px 0px;
-  background: linear-gradient(89.97deg, #2D6A4F -27.83%, #52B588 117%);
+  background: linear-gradient(89.97deg, #2d6a4f -27.83%, #52b588 117%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 26px 26px 0px 0px;
   margin-left: -15.5px;
   margin-right: -15.5px;
 }
-#prizes-box h1{
+#prizes-box h1 {
   text-align: center;
   font-family: "Source Sans Pro Regular";
   font-size: 20px;
   font-weight: 700;
 }
-#prizes-box{
+#prizes-box {
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   margin-bottom: 48px;
   padding-bottom: 20px;
 }
-#prizes{
+#prizes {
   margin-right: 5%;
   margin-left: 5%;
 }
-#prizes-img{
+#prizes-img {
   width: 106px;
   height: 106px;
 }
-#timeline #timeline-img{
+#timeline #timeline-img {
   text-align: center;
   padding-top: 45px;
 }
-#timeline{
-  background-image: url(../img/timeline-ornament-l.svg), url(../img/timeline-ornament-r.svg);
+#timeline {
+  background-image: url(../img/timeline-ornament-l.svg),
+    url(../img/timeline-ornament-r.svg);
   background-repeat: no-repeat;
   background-position: left bottom, right top;
 }
@@ -236,34 +238,43 @@ header .container {
 }
 .navbar-toggler {
   border-color: rgb(82, 181, 136);
-} 
+}
 .navbar-toggler:focus {
   border-color: rgb(82, 181, 136);
   outline: none;
-} 
- /* CSS Media Query */
- @media (max-width: 992px) {
-  #timeline{
+}
+/* CSS Media Query */
+@media (max-width: 992px) {
+  #header-row h1 {
+    font-size: 1.5rem;
+  }
+  #timeline {
     background-size: 50%, 50%;
   }
-  #footer{
+  #footer {
     background-size: 40%, 40%;
   }
- }
- @media (max-width: 768px) {
-   #timeline{
-     background-size: 40%, 40%;
-   }
-   #footer{
+}
+@media (max-width: 768px) {
+  #header-row h1 {
+    font-size: 1.1rem;
+  }
+  #timeline {
     background-size: 40%, 40%;
   }
- }
- @media (max-width: 576px) {
-   #timeline{
-     background-size: 50%, 50%;
-   }
-   #footer{
+  #footer {
+    background-size: 40%, 40%;
+  }
+}
+@media (max-width: 576px) {
+  #header-row h1 {
+    font-size: 1rem;
+  }
+  #timeline {
+    background-size: 50%, 50%;
+  }
+  #footer {
     background-size: 40%, 40%;
     text-align: center;
   }
- }
+}
