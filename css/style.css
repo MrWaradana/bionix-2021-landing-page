@@ -34,6 +34,9 @@ header h1 {
   font-size: 64px;
   font-family: "Roboto Bold";
 }
+.countdown li {
+  background-color: rgba(244, 235, 193, 0.5);
+}
 .tombol {
   text-align: center;
   margin-top: 15px;
