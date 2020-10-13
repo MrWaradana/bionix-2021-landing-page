@@ -189,6 +189,12 @@ header .container {
   /* text-align: right; */
   margin-bottom: 10px;
 }
+.logo-ise {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 48px;
+}
 .navbar {
   font-family: "Source Sans Pro Regular";
   font-weight: 600;
