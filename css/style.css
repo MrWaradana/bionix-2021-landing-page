@@ -199,6 +199,10 @@ header .container {
   font-family: "Source Sans Pro Regular";
   font-weight: 600;
 }
+a.tombol-daftar {
+  letter-spacing: 1px;
+}
+
 #prizes-box #box-title {
   text-align: center;
   font-family: "Fredoka One";
