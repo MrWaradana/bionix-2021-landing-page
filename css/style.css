@@ -39,47 +39,12 @@ header h1 {
   color: #1A6D75;
   font-size: 60px;
 }
-.tombol {
-  text-align: center;
-}
-.button {
-  background: linear-gradient(270.02deg, #328796 0%, #285B70 44.34%, #364A82 99.96%);
-  border-radius: 7px;
-  border: none;
-  text-align: center;
-  font-family: "Audimat Mono Reg";
-  font-weight: bold;
-  font-size: 32px;
-  margin: 0px 20px 0 20px;
-}
+
 header .container {
   position: relative;
   z-index: 1;
 }
-.countdown {
-  text-align: center;
-  font-size: 20px;
-  font-family: "Audimat Mono Reg";
-  text-shadow: 0px 6px 6px rgb(0 0 0 / 25%);
-  margin-bottom: 90px;
-}
-.countdown li{
-  color: white;
-  display: inline-block;
-  font-size: 30px;
-  list-style-type: none;
-  padding: 1px;
-}
-#days,
-#hours,
-#minutes,
-#seconds {
-  display: block;
-  color: #AEC1C5;
-  font-size: 175px;
-  margin: 15px;
-  margin-bottom: 0px;
-}
+
 .nav-container{
   width: 100%;
 }
@@ -122,11 +87,8 @@ nav ul{
   padding: 2px;
   border-bottom: 4px solid;
 }
-.text-dark-blue {
-  color: #000000;
-}
-#about {
-  position: relative;
+
+#home {
   text-align: center;
 }
 #descbox-about {
@@ -139,13 +101,37 @@ nav ul{
   font-weight: 700;
   font-size: 29px;
 }
+.countdown {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Audimat Mono Reg";
+  text-shadow: 0px 6px 6px rgb(0 0 0 / 25%);
+  margin-bottom: 90px;
+}
+.countdown li{
+  color: white;
+  display: inline-block;
+  font-size: 30px;
+  list-style-type: none;
+  padding: 1px;
+}
+#days,
+#hours,
+#minutes,
+#seconds {
+  display: block;
+  color: #AEC1C5;
+  font-size: 175px;
+  margin: 15px;
+  margin-bottom: 0px;
+}
 .text-coming-soon{
   color: #3298A4;
   font-family: "Galaxy Regular";
   font-size: 111px;
-  filter: blur(0.25px);
+  filter: blur(0.1px);
   -webkit-text-fill-color: #3298A4;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #FFF2AD;
   text-shadow: 4px 4px 20px white;
   margin-top: 100px;
@@ -165,25 +151,53 @@ nav ul{
   border-bottom: 7px #3298A4 solid;
   border-radius: 4px;
 }
-#header-row h1 {
-  margin-top: 48px;
-  margin-left: 20px;
-  margin-right: 20px;
+.tombol {
+  text-align: center;
+}
+.tombol a{
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  font-family: "Audimat Mono Reg";
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0px 20px 0 20px;
+  padding: 13px 25px 13px 25px;
+  color: rgb(255, 255, 255, 95%);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.tombol a:hover{
+  box-shadow: 0 7px 10px grey ;
+  color: white;
+}
+.tombol a:active{
+  box-shadow: 0 7px 10px grey ;
+  font-size: 26px;
+}
+.button {
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  font-family: "Audimat Mono Reg";
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0px 20px 0 20px;
 }
 #button2 {
   margin-top: 20px;
-  color: white;
   padding: 13px 25px 13px 25px;
-  font-family: "Audimat Mono Reg";
+  background: linear-gradient(270.02deg, #328796 0%, #285B70 44.34%, #364A82 99.96%);
 }
 #button3 {
   margin-top: 20px;
-  color: white;
   padding: 13px 75px 13px 75px;
   background: linear-gradient(270.02deg, #364A82 0%, #285B70 44.34%, #328796 99.96%);
-  font-family: "Audimat Mono Reg";
 }
-
+#studentlevel{
+  background-image: url(../img/floating\ rock.svg);
+  background-position: right top;
+}
 .contact-info h1 {
   text-align: center;
   font-family: "Source Sans Pro Regular";
@@ -229,10 +243,6 @@ footer {
   top: 10px;
   left: 10px;
   width: 48px;
-}
-.navbar {
-  font-family: "Source Sans Pro Regular";
-  font-weight: 600;
 }
 a.tombol-daftar {
   letter-spacing: 1px;
