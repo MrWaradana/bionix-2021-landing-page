@@ -31,7 +31,7 @@
   </script>
 </head>
 
-<body class="bg">
+<body class="bg" >
   
   <!--navbar section-->
   <div class="nav-container">
@@ -42,11 +42,21 @@
             <li class="nav-item" role="presentation">
               <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#studentlevel" data-toggle="tab" role="tab">Student Level<i class="fas fa-angle-down"></i></a>
+            <li class="nav-item dropdown" role="presentation">
+              <a class="nav-link" href="#studentlevel" data-bs-toggle="dropdown">Student Level<i class="fas fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="dropdown-item" href="#">Benefit</a></li>
+                <li><a class="dropdown-item" href="#">Timeline</a></li>
+                </ul>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item dropdown" role="presentation">
               <a class="nav-link" href="#collegelevel" data-toggle="tab" role="tab">College Level<i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="dropdown-item" href="#">Benefit</a></li>
+                <li><a class="dropdown-item" href="#">Timeline</a></li>
+                </ul>
             </li>
           </ul>
           <a class="nav-link login" href="#login" data-toggle="tab" role="tab">Login</a>  
@@ -59,7 +69,7 @@
     <div class="container">
       <div class="row text-center" id="header-row">
         <div class="col-12">
-          <img src="img/bionix.png" alt="" class="img-fluid"/>
+          <img src="img/bionix.png" alt="" class="img-fluid" width="500px"/>
         </div>
         <div class="col-12">
           <h1>BUSINESS AND IT OLYMPIAD <br>ON INFORMATION SYSTEM EXPO</h1>
@@ -222,7 +232,7 @@
   </div>
 
   <!--footer-->
-  <footer>
+  <footer class="footer">
   <div class="container-fluid" id="footer">
     <div class="img"></div>
     <div class="row">
@@ -255,10 +265,10 @@
             <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="logo">
+        <!-- <div class="logo">
           <img src="img/logo1.png" style="height: 102px; width: 102px" class="img-fluid" />
           <img src="img/logo-si.png" style="width: 149px; height: 53px" class="img-fluid" />
-        </div>
+        </div> -->
         <h1>
           <span>
             <i class="fa fa-copyright" aria-hidden="true"></i>
