@@ -31,24 +31,26 @@
   </script>
 </head>
 
-<body class="bg-gradient">
+<body class="bg">
   
-  <!--navbar-->
+  <!--navbar section-->
   <div class="nav-container">
-      <nav class="navbar navbar-expand-lg container mb-5">
-        <div class="logo"><a href="#"><img src="img/Logo Ise 2021.svg" alt="logo ISE! 2021" style="width: 140px; height: auto" /></a></div>
+      <nav class="navbar navbar-custom fixed-top navbar-expand-lg container-fluid mb-5">
+        <div class="logo"><a class="navbar-brand"href="#"><img src="img/Logo Ise 2021.svg" alt="logo ISE! 2021" width="140px" height="auto"/></a></div>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 list">
           <ul class="border-0 nav nav-tabs ml-auto" role="tablist">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#studentlevel" data-toggle="tab" role="tab">Student Level</a>
+              <a class="nav-link" href="#studentlevel" data-toggle="tab" role="tab">Student Level<i class="fas fa-angle-down"></i></a>
+              
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" href="#collegelevel" data-toggle="tab" role="tab">College Level</a>
+              <a class="nav-link" href="#collegelevel" data-toggle="tab" role="tab">College Level<i class="fas fa-angle-down"></i></a>
             </li>
           </ul>
+          <a class="nav-link login" href="#login" data-toggle="tab" role="tab">Login</a>  
         </div>
       </nav>
    </div>
@@ -57,7 +59,7 @@
     <div class="container">
       <div class="row text-center" id="header-row">
         <div class="col-12">
-          <img src="img/bionix.png" alt="" class="img-fluid px-3 pt-4" style="justify-content: center;margin: 100px 0 100px 0;"/>
+          <img src="img/bionix.png" alt="" class="img-fluid px-3 pt-4" style="justify-content: center;margin: 300px 0 100px 0;"/>
         </div>
         <div class="col-12">
           <h1>BUSINESS AND IT OLYMPIAD <br>ON INFORMATION SYSTEM EXPO</h1>
@@ -84,7 +86,7 @@
           </p>
         </div>
       </div>
-      <div class="text-coming-soon">Coming Soon</div>
+      <div class="text-coming-soon">COMING SOON</div>
       <div class="text-stay-tune"><span>Stay tuned,</span> our website is on the way!</div>
       <div class="countdown mt-3">
         <li class="rounded p-1"><span id="days">00</span> Day</li>
@@ -108,51 +110,39 @@
                 <a class="nav-link active" href="#about" data-toggle="tab" role="tab">About</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Benefit</a>
+                <a class="nav-link" href="#benefit" data-toggle="tab" role="tab">Benefit</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#prizes" data-toggle="tab" role="tab">Timeline</a>
+                <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Timeline</a>
               </li>
             </ul><ul class="border-0 nav nav-tabs mx-auto" role="tablist">
               <li class="nav-item" role="presentation">
-                <a class="nav-link active" href="#about" data-toggle="tab" role="tab">FAQ</a>
+                <a class="nav-link" href="#faq" data-toggle="tab" role="tab">FAQ</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Contact</a>
+                <a class="nav-link" href="#contact" data-toggle="tab" role="tab">Contact</a>
             </ul>
           </div>
         </nav>
-     </div>
-      <div class="container" id="timeline-img">
-        <img src="img/timeline.svg" class="img-fluid" />
       </div>
+     <section id="about" class="tab-pane fade show active full-section bgipad" role="tabpanel">
+      <div id="descbox-about" class="text-center">
+        <div class="text-coming-soon">STUDENT <br>LEVEL</div>
+        <div class="description">
+          <p>
+            Business and IT Olympiad on Information System Expo adalah bagian dari serangkaian acara ISE! dengan konsep olimpiade dan kompetisi tingkat nasional yang ditujukan bagi pelajar SMA/SMK/sederajat dan mahasiswa. Bionix ISE! 2021 hadir dengan konsep daring penuh yang memadukan teori dan implementasi dari manajemen, bisnis, dan teknologi informasi.
+
+          </p>
+        </div>
+      </div>
+        <div class="container" id="timeline-img">
+          <img src="img/Tahapan&Persyaratan Student Level.svg" class="img-fluid" />
+        </div>
     </section>
-    
+  </section>
+
     <!--timeline-->
-    <section id="timeline" class="tab-pane fade full-section bgipad" role="tabpanel">
-      <div class="nav-container">
-        <nav class="navbar navbar-expand-lg container mb-5">
-          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 list">
-            <ul class="border-0 nav nav-tabs mx-auto" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active" href="#about" data-toggle="tab" role="tab">About</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Benefit</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#prizes" data-toggle="tab" role="tab">Timeline</a>
-              </li>
-            </ul><ul class="border-0 nav nav-tabs mx-auto" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link active" href="#about" data-toggle="tab" role="tab">FAQ</a>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Contact</a>
-            </ul>
-          </div>
-        </nav>
-     </div>
+    <section id="#" class="tab-pane fade full-section bgipad" role="tabpanel">
       <div class="container" id="timeline-img">
         <img src="img/timeline.svg" class="img-fluid" />
       </div>
@@ -239,10 +229,14 @@
 
   <!--footer-->
   <footer>
-  <div class="container" id="footer">
+  <div class="container-fluid" id="footer">
     <div class="img"></div>
     <div class="row">
       <div class="col-12 col-sm-6 text-center text-sm-left">
+        
+        
+      </div>
+      <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
         <h1>Find us on social media</h1>
         <div class="listsocmed">
           <a href="https://ise-its.com/" target="_blank" title="Website">
@@ -267,8 +261,6 @@
             <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
-      </div>
-      <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
         <div class="logo">
           <img src="img/logo1.png" style="height: 102px; width: 102px" class="img-fluid" />
           <img src="img/logo-si.png" style="width: 149px; height: 53px" class="img-fluid" />
