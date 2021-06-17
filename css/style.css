@@ -27,23 +27,23 @@
   width: 100%;
   height: 100%;
 }
-.logo img{
-  margin: 17px 0 17px 85px;
-  width: 130px;
-  height: auto;
-}
 .nav-container{
   width: 100%;
 }
 .navbar{
   background: #FB5E57;
-  box-shadow: 0px 3px 10px #333;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18)
 }
 .navbar-custom{
-  height: 150px;
+  height: 100px;
+}
+.navbar-brand{
+  width: 100px;
+  height: auto;
+  margin-left: 80px;
 }
 nav ul{
-  font-size: 30px;
+  font-size: 22px;
 }
 .nav {
   display: flex;
@@ -56,8 +56,6 @@ nav ul{
 }
 .nav-item {
   display: flex;
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 2px;
 }
 .nav-tabs .nav-link {
@@ -78,17 +76,29 @@ nav ul{
   color: #000000;
   font-weight: bold;
   padding: 2px;
-  border-bottom: 6px solid;
+  border-radius: 2px;
+  border-bottom: 4px solid;
 }
 .navbar .login{
   background: linear-gradient(270.02deg, #364A82 0%, #285B70 44.34%, #328796 99.96%);
   border-radius: 20px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 300;
   color: white;
-  padding: 10px 60px 10px 60px;
+  padding: 12px 60px 10px 60px;
   margin: 48px;
-
+}
+.navbar .login:hover{
+  box-shadow: 0 7px 10px grey ;
+  color: white;
+}
+.navbar .login:active{
+  box-shadow: 0 7px 10px grey;
+  margin: 55px;
+  font-size: 18px;
+}
+header img{
+  margin-top: 180px;
 }
 header h1 {
   text-align: center;
@@ -127,7 +137,7 @@ header .container {
   margin-bottom: 90px;
 }
 .countdown li{
-  color: white;
+  color: black;
   display: inline-block;
   font-size: 30px;
   list-style-type: none;
@@ -138,7 +148,7 @@ header .container {
 #minutes,
 #seconds {
   display: block;
-  color: #AEC1C5;
+  color: #2A5872;
   font-size: 175px;
   margin: 15px;
   margin-bottom: 0px;
@@ -173,10 +183,10 @@ header .container {
   text-align: center;
 }
 .tombol a{
-  border-radius: 7px;
+  border-radius: 20px;
   border: none;
   text-align: center;
-  font-family: "Audimat Mono Reg";
+  font-family: "Hind Bold";
   font-weight: bold;
   font-size: 32px;
   margin: 0px 20px 0 20px;
@@ -258,7 +268,7 @@ footer {
 .fab,
 .fas {
   color: #222;
-  font-size: 28px;
+  font-size: 22px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
@@ -340,12 +350,15 @@ a.tombol-daftar {
   outline: none;
 }
 /* CSS Media Query */
-@media (max-width: 992px) {
+@media (max-width: 1084px) {
   #header-row h1 {
     font-size: 2rem;
   }
+  .navbar-brand{
+    margin: 2px;
+  }
   nav ul{
-    font-size: 15px;
+    font-size: 19px;
   }
   #timeline {
     background-size: 50%, 50%;
