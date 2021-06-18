@@ -51,7 +51,7 @@
   margin-left: 80px;
 }
 nav ul{
-  font-size: 22px;
+  font-size: 18px;
 }
 .nav {
   display: flex;
@@ -125,7 +125,7 @@ nav ul{
   font-weight: 300;
   color: white;
   padding: 12px 60px 10px 60px;
-  margin: 48px;
+  margin: 48px 48px 48px 27px;
   transition: all 0.3s ease;
 }
 .navbar .login:hover{
@@ -134,7 +134,7 @@ nav ul{
 }
 .navbar .login:active{
   box-shadow: 0 7px 10px grey;
-  margin: 55px;
+  margin: 48px 48px 48px 32px;
   font-size: 18px;
 }
 
@@ -307,7 +307,11 @@ header .container {
   max-width: 100%;
 }
 footer .container{
-  width: 1800px;
+  position: relative;
+  max-width: inherit;
+}
+#footer{
+  width: 1300px;
 }
 #footer img{
   margin: 70px 0 5px 48px;
@@ -321,7 +325,7 @@ footer .container{
 }
 #footer i {
   color: #f1f1f1;
-  font-size: 16px;
+  font-size: 20px;
   margin-left: 10px;
   margin-bottom: 10px;
   letter-spacing: 8px;
@@ -332,6 +336,9 @@ footer .container{
 #footer ul{
   list-style-type: none;
   display: inline-block;
+}
+#footer ul p{
+  color: white;
 }
 #footer ul a{
   color: white;
