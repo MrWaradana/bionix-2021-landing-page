@@ -1,4 +1,4 @@
-/*Font*/
+  /*Font*/
 @font-face {
   font-family: "Audimat Mono Bold";
   src: url("../fonts/AUDIMB__.TTF");
@@ -32,7 +32,6 @@
   width: 100%;
   height: 100%;
 }
-
 
 /* navbar section start */
 .nav-container{
@@ -74,16 +73,12 @@ nav ul{
 }
 .nav-tabs .nav-link:hover {
   border-color: transparent transparent black transparent;
-  font-weight: bold;
-  padding: 2px;
   border-bottom: 4px solid;
 }
 .nav-tabs .nav-link.active {
   background-color: transparent;
   border-color: transparent transparent black transparent;
   color: #000000;
-  font-weight: bold;
-  padding: 2px;
   border-radius: 2px;
   border-bottom: 4px solid;
 }
@@ -108,6 +103,7 @@ nav ul{
   font-size: 22px;
   font-family: "Hind Bold";
   padding: 15px 10px 10px 20px;
+  margin: 8px;
   border-radius: 10px;
   width: 175px;
 }
@@ -117,6 +113,10 @@ nav ul{
 }
 .navbar .nav-item .dropdown-menu a:hover{
   background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
+}
+.navbar .nav-item .dropdown-menu a.active{
+  background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
+  color: #111;
 }
 .navbar .login{
   background: linear-gradient(270.02deg, #364A82 0%, #285B70 44.34%, #328796 99.96%);
@@ -163,7 +163,7 @@ header .container {
 /* Home section start */
 #home {
   text-align: center;
-}
+ }
 #descbox-about {
   margin-top: 7%;
   margin-left: 20%;
@@ -171,7 +171,7 @@ header .container {
 }
 .description p {
   font-family: "Hind Regular";
-  font-weight: 65 0;
+  font-weight: 650;
   font-size: 20px;
 }
 .countdown {
@@ -272,13 +272,13 @@ header .container {
 
 
 /* Student level start */
-#studentlevel{
+#slabout{
   background-image: url(../img/floating\ rock.svg);
-  background-position: top right;
+  background-position:top right;
   background-repeat: no-repeat;
-  background-size: contain;
 }
-#studentlevel #descbox-about .text-coming-soon{
+
+#slabout #descbox-about .text-coming-soon{
   color: #3298A4;
   font-family: "Galaxy Regular";
   font-size: 111px;
@@ -289,26 +289,65 @@ header .container {
   text-shadow: 4px 4px 20px white;
   margin: 200px 0px 200px 0;
 }
-#studentlevel #descbox-about .description p{
+#slabout #descbox-about .description{
+  margin: 100px 0 200px 0;
+  background: #FFCAC8;
+  padding: 28px 100px 8px 100px;
+  border-radius: 10px;
+}
+#slabout #descbox-about .description p{
   font-family: "Hind Bold";
   font-weight: 700;
-  font-size: 29px;
+  font-size: 22px;
   text-align: center;
+}
+#slabout .container img{
+  margin-bottom: 700px;
+}
+#slbenefit .container img{
+  margin-top: 100px;
+  margin-bottom: 700px;
+}
+
+/* college level section start */
+#clabout #descbox-about .text-coming-soon{
+  color: #3298A4;
+  font-family: "Galaxy Regular";
+  font-size: 111px;
+  filter: blur(0.1px);
+  -webkit-text-fill-color: #3298A4;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF2AD;
+  text-shadow: 4px 4px 20px white;
+  margin: 200px 0px 200px 0;
+}
+#clabout #descbox-about .description{
   margin: 100px 0 200px 0;
+  background: #FFCAC8;
+  padding: 28px 100px 8px 100px;
+  border-radius: 10px;
 }
-.contact-info h1 {
+#clabout #descbox-about .description p{
+  font-family: "Hind Bold";
+  font-weight: 700;
+  font-size: 22px;
   text-align: center;
-  font-family: "Source Sans Pro Regular";
-  font-size: 30px;
-  font-weight: bold;
 }
+#clabout .container img{
+  margin-bottom: 700px;
+}
+#clbenefit .container img{
+  margin-top: 100px;
+  margin-bottom: 700px;
+}
+
 .footer {
   background-color: #530E0B;
   max-width: 100%;
 }
 footer .container{
-  position: relative;
-  max-width: inherit;
+  position: auto;
+  max-width:unset;
 }
 #footer{
   width: 1300px;
@@ -347,77 +386,7 @@ footer .container{
 .footer hr{
   border-top: 1px solid rgba(209, 108, 108, 0.45) ;
 }
-/* .fab,
-.fas {
-  color: #222;
-  font-size: 22px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-} */
-#web-ise{
-  /* text-align: right; */
-  color: white;
-}
-#web-ise a {
-  color: white;
-  font-family: "Source Sans Pro Regular";
-  font-size: 18px;
-  vertical-align: middle;
-}
-.logo {
-  /* text-align: right; */
-  margin-bottom: 10px;
-}
-.logo-ise {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 48px;
-}
 
-#prizes-box #box-title {
-  text-align: center;
-  font-family: "Fredoka One";
-  font-size: 32px;
-  padding: 12.5px 0px;
-  background: linear-gradient(89.97deg, #2d6a4f -27.83%, #52b588 117%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px 26px 0px 0px;
-  margin-left: -15.5px;
-  margin-right: -15.5px;
-}
-#prizes-box h1 {
-  text-align: center;
-  font-family: "Source Sans Pro Regular";
-  font-size: 20px;
-  font-weight: 700;
-}
-#prizes-box {
-  text-align: center;
-  background: #ffffff;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  margin-bottom: 48px;
-  padding-bottom: 20px;
-}
-#prizes {
-  margin-right: 5%;
-  margin-left: 5%;
-}
-#prizes-img {
-  width: 106px;
-  height: 106px;
-}
-#timeline #timeline-img {
-  text-align: center;
-  padding-top: 45px;
-}
-#timeline {
-  background-image: url(../img/timeline-ornament-l.svg),
-    url(../img/timeline-ornament-r.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom, right top;
-}
 /* CSS Media Query */
 @media (max-width: 1084px) {
   #header-row h1 {
@@ -459,3 +428,4 @@ footer .container{
     text-align: center;
   }
 }
+

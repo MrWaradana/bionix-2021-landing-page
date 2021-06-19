@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/normalize.min.css" />
   <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome-all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KGB6BB4MW"></script>
   <script>
@@ -31,7 +33,7 @@
   </script>
 </head>
 
-<body class="bg" >
+<body class="bg">
   
   <!--navbar section-->
   <div class="nav-container">
@@ -43,19 +45,19 @@
               <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a>
             </li>
             <li class="nav-item dropdown" role="presentation">
-              <a class="nav-link" href="#studentlevel" data-bs-toggle="dropdown">Student Level<i class="fas fa-angle-down"></i></a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About<i class="fas fa-angle-right"></i></a></li>
-                <li><a class="dropdown-item" href="#">Benefit</a></li>
-                <li><a class="dropdown-item" href="#">Timeline</a></li>
+              <a class="nav-link" href="#slabout" data-toggle="tab" role="tab">Student Level<i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#slabout" data-toggle="tab" role="tab">About<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="dropdown-item" href="#slbenefit" data-toggle="tab" role="tab">Benefit<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="dropdown-item" href="#sltimeline" data-toggle="tab" role="tab">Timeline<i class="fas fa-angle-right"></i></a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown" role="presentation">
-              <a class="nav-link" href="#collegelevel" data-toggle="tab" role="tab">College Level<i class="fas fa-angle-down"></i></a>
+              <a class="nav-link" href="#clabout" data-toggle="tab" role="tab">College Level<i class="fas fa-angle-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About<i class="fas fa-angle-right"></i></a></li>
-                <li><a class="dropdown-item" href="#">Benefit</a></li>
-                <li><a class="dropdown-item" href="#">Timeline</a></li>
+                <li><a class="dropdown-item" href="#clabout" data-toggle="tab" role="tab">About<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="dropdown-item" href="#clbenefit" data-toggle="tab" role="tab">Benefit<i class="fas fa-angle-right"></i></a></li>
+                <li><a class="dropdown-item" href="#cltimeline" data-toggle="tab" role="tab">Timeline<i class="fas fa-angle-right"></i></a></li>
                 </ul>
             </li>
           </ul>
@@ -86,7 +88,6 @@
               <div class="description">
                 <p>
                   Business and IT Olympiad on Information System Expo adalah bagian dari serangkaian acara ISE! dengan konsep olimpiade dan kompetisi tingkat nasional yang ditujukan bagi pelajar SMA/SMK/sederajat dan mahasiswa. Bionix ISE! 2021 hadir dengan konsep daring penuh yang memadukan teori dan implementasi dari manajemen, bisnis, dan teknologi informasi.
-
                 </p>
               </div>
             </div>
@@ -105,32 +106,9 @@
           </section>
 
           <!--student level section-->
-          <section id="studentlevel" class="tab-pane fade full-section bgipad" role="tabpanel">
-            <div class="nav-container">
-              <nav class="navbar navbar-expand-lg container mb-5">
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 list">
-                  <ul class="border-0 nav nav-tabs mx-auto" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link active" href="#about" data-toggle="tab" role="tab">About</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" href="#benefit" data-toggle="tab" role="tab">Benefit</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" href="#timeline" data-toggle="tab" role="tab">Timeline</a>
-                    </li>
-                  </ul><ul class="border-0 nav nav-tabs mx-auto" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" href="#faq" data-toggle="tab" role="tab">FAQ</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" href="#contact" data-toggle="tab" role="tab">Contact</a>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          <section id="about" class="tab-pane fade show active full-section bgipad" role="tabpanel">
-            <div id="descbox-about" class="text-center">
+          <!-- about section -->
+          <section id="slabout" class="tab-pane fade full-section bgipad" role="tabpanel">
+            <div class="text-center" id="descbox-about">
               <div class="text-coming-soon">STUDENT <br>LEVEL</div>
               <div class="description">
                 <p>
@@ -138,179 +116,141 @@
 
                 </p>
               </div>
-            </div>
               <div class="container" id="timeline-img">
-                <img src="img/Tahapan&Persyaratan Student Level.svg" class="img-fluid" />
+                <img src="img/tahapan-persyaratan-student-level.png" class="img-fluid" />
+              </div>
+            </div>
+          </section>
+          
+          <!-- benefit section -->
+          <section id="slbenefit" class="tab-pane fade full-section bgipad" role="tabpanel">
+              <div class="container">
+                <div class="text-center text-coming-soon">STUDENT <br>LEVEL</div>
+                <img src="/img/benefit-student-level.svg" alt="" class="img-fluid">
               </div>
           </section>
-        </section>
 
           <!--timeline-->
-          <section id="#" class="tab-pane fade full-section bgipad" role="tabpanel">
+          <section id="sltimeline" class="tab-pane fade full-section bgipad" role="tabpanel">
             <div class="container" id="timeline-img">
-              <img src="img/timeline.svg" class="img-fluid" />
+              <div class="text-center text-coming-soon">STUDENT<br>LEVEL</div>
+              <img src="img/timeline-student-level.png" class="img-fluid" style="margin: 200px 0;"/>
             </div>
           </section>
 
-          <!--prizes-->
-          <section id="prizes" class="tab-pane fade full-section bgipad" role="tabpanel">
-            <div class="title">
-              <div class="title-heading">
-                <h1>BE THE WINNER OF BIONIX 2020</h1>
-              </div>
-            </div>
-            <div class="container" id="prizes-box">
-              <h1 id="box-title">1st PLACE</h1>
-              <div class="row">
-                <div class="col-sm">
-                  <img src="img/Term of Use 1.png" id="prizes-img" />
-                  <h1>SERTIFIKAT</h1>
-                </div>
-                <div class="col-sm">
-                  <img src="img/Success 1.png" id="prizes-img" />
-                  <h1>FREEPASS SNMPTN SISTEM INFORMASI ITS 2021</h1>
-                </div>
-                <div class="col-sm">
-                  <img src="img/Payment Processed 1.png" id="prizes-img" />
-                  <h1>Rp. 3.000.000,-</h1>
-                </div>
-              </div>
-            </div>
-            <div class="container" id="prizes-box">
-              <h1 id="box-title">2nd PLACE</h1>
-              <div class="row">
-                <div class="col-sm">
-                  <img src="img/Term of Use 1.png" id="prizes-img" />
-                  <h1>SERTIFIKAT</h1>
-                </div>
-                <div class="col-sm">
-                  <img src="img/Payment Processed 1.png" id="prizes-img" />
-                  <h1>Rp. 2.000.000,-</h1>
-                </div>
-              </div>
-            </div>
-            <div class="container" id="prizes-box">
-              <h1 id="box-title">3rd PLACE</h1>
-              <div class="row">
-                <div class="col-sm">
-                  <img src="img/Term of Use 1.png" id="prizes-img" />
-                  <h1>SERTIFIKAT</h1>
-                </div>
-                <div class="col-sm">
-                  <img src="img/Payment Processed 1.png" id="prizes-img" />
-                  <h1>Rp. 1.000.000,-</h1>
-                </div>
-              </div>
-            </div>
-            <div class="container" id="prizes-box">
-              <h1 id="box-title">Favorite Winner</h1>
-              <div class="row">
-                <div class="col-sm">
-                  <img src="img/Term of Use 1.png" id="prizes-img" />
-                  <h1>SERTIFIKAT</h1>
-                </div>
-                <div class="col-sm">
-                  <img src="img/Payment Processed 1.png" id="prizes-img" />
-                  <h1>Rp. 300.000,-</h1>
-                </div>
-              </div>
-            </div>
-          </section>
+          <!--college level section-->
+          <!-- about section -->
+          <section id="clabout" class="tab-pane fade full-section bgipad" role="tabpanel">
+            <div class="text-center" id="descbox-about">
+              <div class="text-coming-soon">COLLEGE<br>LEVEL</div>
+              <div class="description">
+                <p>
+                  Bionix College Level merupakan kompetisi studi kasus bisnis nasional yang berfokus pada  pemecahan studi kasus bisnis dan teknologi informasi yang dialami oleh suatu perusahaan untuk tingkat mahasiswa di Indonesia. Bionix College Level dilaksanakan melalui tiga tahapan kompetisi dengan konsep acara daring penuh.
 
-          <!--contact-->
-          <section id="contact" class="tab-pane fade full-section bgipad" role="tabpanel">
-            <div class="title">
-              <div class="title-heading">
-                <h1>CONTACT US</h1>
+                </p>
+              </div>
+              <div class="container">
+                <img src="img/tahapan-persyaratan-college-level.png" class="img-fluid" />
               </div>
             </div>
-            <div class="contact-info">
-              <h1>Alfrida : 0831-4428-8955(WA)</h1>
-              <h1>Nadia : nadiawptrr (line)</h1>
-            </div>
+            <img src="img/Landscape planet.png" style="width: 98.9vw;"/>
           </section>
-        </div>
           
+          <!-- benefit section -->
+          <section id="clbenefit" class="tab-pane fade full-section bgipad" role="tabpanel">
+              <div class="container">
+                <div class="text-center text-coming-soon">College <br>LEVEL</div>
+                <img src="/img/benefit-college-level.png" alt="Fasilitas" class="img-fluid">
+              </div>
+            <img src="img/Landscape planet.png" style="width: 98.9vw;"/>
+          </section>
+          
+          <!--timeline section-->
+          <section id="cltimeline" class="tab-pane fade full-section bgipad" role="tabpanel">
+            <div class="container">
+              <div class="text-center text-coming-soon">College <br>LEVEL</div>
+              <img src="img/timeline-college-level.png" class="img-fluid" style="margin-top: 200px;" />
+            </div>
+            <img src="img/Landscape planet.png" style="width: 98.9vw;"/>
+          </section>
 
 
-
-
-  <!--footer-->
-  <footer class="footer">
-    <div class="container" id="footer">
-      <div class="row">
-        <div class="col-12 col-sm-6 text-center text-sm-left">
-          <img src="img/Logo ISE 2021 Putih.svg" alt="logo ise 2021" class="img-fluid" width="120px" height="auto">
-        </div>
-        <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
-          <h1>Find us on our social media</h1>
-          <div class="listsocmed">
-            <a href="https://ise-its.com/" target="_blank" title="Website">
-              <i class="fas fa-globe" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/is_expo/" target="_blank" title="Instagram">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://twitter.com/is_expo" target="_blank" title="Twitter">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCPbOX3w8G4_dwOMDNl97PTw" target="_blank" title="YouTube">
-              <i class="fab fa-youtube" aria-hidden="true"></i>
-            </a>
-            <a href="https://vt.tiktok.com/ZSaw8WST/" target="_blank" title="Tiktok">
-              <i class="fab fa-tiktok" aria-hidden="true"></i>
-            </a>
-            <a href="https://line.me/R/ti/p/%40isexpo" target="_blank" title="Line">
-              <i class="fab fa-line" aria-hidden="true"></i>
-            </a>
-            <a href="#" target="_blank" title="Linkedin">
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
-            </a>
+        <!--footer-->
+        <footer class="footer">
+          <div class="container" id="footer">
+            <div class="row">
+              <div class="col-12 col-sm-6 text-center text-sm-left">
+                <img src="img/Logo ISE 2021 Putih.svg" alt="logo ise 2021" class="img-fluid" width="120px" height="auto">
+              </div>
+              <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
+                <h1>Find us on our social media</h1>
+                <div class="listsocmed">
+                  <a href="https://ise-its.com/" target="_blank" title="Website">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.instagram.com/is_expo/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://twitter.com/is_expo" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCPbOX3w8G4_dwOMDNl97PTw" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://vt.tiktok.com/ZSaw8WST/" target="_blank" title="Tiktok">
+                    <i class="fab fa-tiktok" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://line.me/R/ti/p/%40isexpo" target="_blank" title="Line">
+                    <i class="fab fa-line" aria-hidden="true"></i>
+                  </a>
+                  <a href="#" target="_blank" title="Linkedin">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col col-sm-2 text-center text-sm-left">
+                <ul>
+                  <p><strong>Our Events</strong></p>
+                  <li><a href="#">ISE!</a></li>
+                  <li><a href="#">Icon</a></li>
+                  <li><a href="#">Merch</a></li>
+                </ul>
+              </div>
+              <div class="col col-sm-3 text-center text-sm-left">
+                <ul>
+                  <p><strong>Bionix</strong></p>
+                  <li><a href="#">Bionix Student Level</a></li>
+                  <li><a href="#">Bionix College Level</a></li>
+                </ul>
+              </div>
+              <div class="col col-sm-3 text-center text-sm-left">
+                <ul>
+                  <p><strong>ICON</strong></p>
+                  <li><a href="#">ICON Academy</a></li>
+                  <li><a href="#">Grand Talkshow</a></li>
+                  <li><a href="#">E-Hall of IS</a></li>
+                  <li><a href="#">Virtual Intern & Job Fair</a></li>
+                </ul>
+              </div>
+              <div class="col col-sm-4 text-center text-sm-right" id="footer-right">
+                <h1>
+                  <span>
+                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                  </span>
+                  2021 ISE
+                </h1>
+              </div>
+            </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col col-sm-2 text-center text-sm-left">
-          <ul>
-            <p><strong>Our Events</strong></p>
-            <li><a href="#">ISE!</a></li>
-            <li><a href="#">Icon</a></li>
-            <li><a href="#">Merch</a></li>
-          </ul>
-        </div>
-        <div class="col col-sm-3 text-center text-sm-left">
-          <ul>
-            <p><strong>Bionix</strong></p>
-            <li><a href="#">Bionix Student Level</a></li>
-            <li><a href="#">Bionix College Level</a></li>
-          </ul>
-        </div>
-        <div class="col col-sm-3 text-center text-sm-left">
-          <ul>
-            <p><strong>ICON</strong></p>
-            <li><a href="#">ICON Academy</a></li>
-            <li><a href="#">Grand Talkshow</a></li>
-            <li><a href="#">E-Hall of IS</a></li>
-            <li><a href="#">Virtual Intern & Job Fair</a></li>
-          </ul>
-        </div>
-        <div class="col col-sm-4 text-center text-sm-right" id="footer-right">
-          <h1>
-            <span>
-              <i class="fa fa-copyright" aria-hidden="true"></i>
-            </span>
-            2021 ISE
-          </h1>
-        </div>
-      </div>
-      </div>
-    </div>
 
-</footer>
+      </footer>
 
-  <!--Js-->
-  <script src="js/jquery.min.js"></script>
+  <!--Script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/countdown.js"></script>
 </body>
