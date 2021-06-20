@@ -32,6 +32,22 @@
   width: 100%;
   height: 100%;
 }
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.1);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #fb5f57;	
+}
+
 
 /* navbar section start */
 .nav-container{
@@ -39,8 +55,8 @@
   font-size: 19px;
 }
 .navbar{
-  background: transparent;
-  transition: all 0.2s ease;
+  background: #FB5E57;
+  transition: all 0.3s ease;
 }
 .navbar.sticky{
   background: #FB5E57;
