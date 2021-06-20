@@ -38,8 +38,11 @@
   width: 100%;
 }
 .navbar{
+  background: transparent;
+}
+.navbar.sticky{
   background: #FB5E57;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18)
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
 }
 .navbar-custom{
   height: 100px;
@@ -346,8 +349,8 @@ header .container {
   max-width: 100%;
 }
 footer .container{
-  position: auto;
-  max-width:unset;
+  position:relative;
+  max-width: inherit;
 }
 #footer{
   width: 1300px;
