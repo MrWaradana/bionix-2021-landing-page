@@ -26,7 +26,7 @@
 
 /*general*/
 .bg{
-  background-image: url(../img/Background\ Bionix.svg);
+  background-image: url(../img/background-bionix.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -296,7 +296,7 @@ header .container {
 
 /* Student level start */
 #slabout{
-  background-image: url(../img/floating\ rock.svg);
+  background-image: url(../img/floating-rock.svg);
   background-position:top right;
   background-repeat: no-repeat;
 }
