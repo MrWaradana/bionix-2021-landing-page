@@ -73,7 +73,6 @@
   width: 120px;
   height: auto;
   margin-left: 80px;
-  transition: all 0.2s ease;
 }
 .nav {
   display: flex;
@@ -150,6 +149,7 @@
   padding: 12px 60px 10px 60px;
   margin: 48px 48px 48px 27px;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .navbar .login:hover{
   box-shadow: 0 3px 5px grey ;
@@ -159,6 +159,10 @@
   box-shadow: 0 7px 10px grey;
   margin: 48px 48px 48px 32px;
   font-size: 18px;
+}
+.navbar .menu-btn{
+  display: none;
+  cursor: pointer;
 }
 
 /* Header Section Start */
@@ -221,7 +225,9 @@ header .container {
   margin: 15px;
   margin-bottom: 0px;
 }
-.text-coming-soon{
+.text-coming-soon,
+#slabout #descbox-about .text-coming-soon,
+#clabout #descbox-about .text-coming-soon{
   color: #3298A4;
   font-family: "Galaxy Regular";
   font-size: 111px;
@@ -231,7 +237,8 @@ header .container {
   -webkit-text-stroke-color: #f0d23c;
   text-shadow: 4px 4px 20px white;
   margin-top: 100px;
-  letter-spacing: 20px;
+  text-align: center;
+  letter-spacing: 2rem;
 }
 .text-stay-tune{
   font-family: "Audimat Mono Reg";
@@ -252,7 +259,7 @@ header .container {
   text-align: center;
   margin-bottom: 500px;
 }
-.tombol a{
+.tombol a button{
   border-radius: 20px;
   border: none;
   text-align: center;
@@ -265,12 +272,11 @@ header .container {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.tombol a:hover{
+.tombol a button:hover{
   box-shadow: 0 7px 10px grey ;
   color: white;
 }
-.tombol a:active{
-  box-shadow: 0 7px 10px grey ;
+.tombol a button:active{
   font-size: 18px;
 }
 .button {
@@ -301,17 +307,6 @@ header .container {
   background-repeat: no-repeat;
 }
 
-#slabout #descbox-about .text-coming-soon{
-  color: #3298A4;
-  font-family: "Galaxy Regular";
-  font-size: 111px;
-  filter: blur(0.1px);
-  -webkit-text-fill-color: #3298A4;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFF2AD;
-  text-shadow: 4px 4px 20px white;
-  margin: 200px 0px 200px 0;
-}
 #slabout #descbox-about .description{
   margin: 100px 0 200px 0;
   background: #FFCAC8;
@@ -333,17 +328,6 @@ header .container {
 }
 
 /* college level section start */
-#clabout #descbox-about .text-coming-soon{
-  color: #3298A4;
-  font-family: "Galaxy Regular";
-  font-size: 111px;
-  filter: blur(0.1px);
-  -webkit-text-fill-color: #3298A4;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFF2AD;
-  text-shadow: 4px 4px 20px white;
-  margin: 200px 0px 200px 0;
-}
 #clabout #descbox-about .description{
   margin: 100px 0 200px 0;
   background: #FFCAC8;
@@ -376,7 +360,7 @@ footer .container{
   width: 1300px;
 }
 #footer img{
-  margin: 70px 0 5px 48px;
+  margin: 70px 0 0 0;
 }
 #footer h1 {
   color: white;
@@ -411,7 +395,30 @@ footer .container{
 }
 
 /* CSS Media Query */
-@media (max-width: 1084px) {
+@media (max-width: 991px) {
+  .navbar .navbar-collapse{
+    background: #fb5f57;
+    border-radius: 1rem;
+    top: 0.5rem;
+  }
+  .navbar .list:focus{
+    top: 0.5rem;
+  }
+  .navbar .menu-btn{
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    display: block;
+    font-size: 1.5rem;
+    color:#f7f7f7;
+    background: linear-gradient(90deg, rgba(54, 74, 130, 0.8), rgba(40, 91, 112, 1), rgba(50, 135, 150, 0.8));
+    outline: none;
+    border-style: outset;
+    border: 1px solid grey;
+  }
+  .navbar .menu-btn:active{
+    border-style: outset;
+    border: none;
+  }
   #header-row h1 {
     font-size: 2rem;
   }
@@ -428,9 +435,10 @@ footer .container{
     background-size: 40%, 40%;
   }
 }
+
 @media (max-width: 768px) {
   #header-row h1 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
   #timeline {
     background-size: 40%, 40%;
@@ -441,6 +449,20 @@ footer .container{
 }
 @media (max-width: 576px) {
   #header-row h1 {
+    font-size: 1.5rem;
+  }
+  .text-coming-soon,
+  #slabout #descbox-about .text-coming-soon,
+  #clabout #descbox-about .text-coming-soon{
+    font-size: 69px;
+    text-align: center;
+  }
+  .text-stay-tune, .text-stay-tune span{
+    font-size: 1rem;
+  }
+  #home .description p,
+  #slabout #descbox-about .description p,
+  #clabout #descbox-about .description p{
     font-size: 1rem;
   }
   #timeline {
@@ -452,3 +474,13 @@ footer .container{
   }
 }
 
+@media (max-width: 426px){
+  .text-coming-soon,
+  #slabout #descbox-about .text-coming-soon,
+  #clabout #descbox-about .text-coming-soon{
+    font-size: 45px;
+    -webkit-text-stroke-width: 1.25px;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+}

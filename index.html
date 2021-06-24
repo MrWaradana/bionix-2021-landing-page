@@ -35,9 +35,10 @@
   
   <!--navbar section-->
   <div class="nav-container">
-      <nav class="navbar navbar-custom fixed-top navbar-expand-lg container-fluid mb-5 ">
+      <nav class="navbar navbar-custom fixed-top navbar-expand-lg container-fluid mb-5">
+       
         <div class="logo"><a class="navbar-brand" href="#"><img src="img/logo-ise-2021.svg" alt="logo ISE! 2021" /></a></div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 list">
+        <div class="collapse navbar-collapse w-100 order-3 dual-collapse2 list" id="collapse_target"> 
           <ul class="border-0 nav navbar-nav nav-tabs ml-auto" role="tablist">
             <li class="nav-item" role="presentation">
               <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a>
@@ -61,6 +62,9 @@
           </ul>
           <a class="nav-link login" href="#login" data-toggle="tab" role="tab">Login</a>  
         </div>
+        <button class="navbar-toggle menu-btn mr-5" data-toggle="collapse" data-target="#collapse_target">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
       </nav>
    </div>
 
@@ -98,8 +102,8 @@
               <li class="rounded p-1"><span id="seconds">00</span>seconds</li>
             </div>
             <div class="tombol">
-              <a href="#" id="button2">Download Guideline</a>
-              <a href="#" id="button3">Daftar Bionix</a>
+              <a href="#"><button class="btn" id="button2">Download Guideline</button></a>
+              <a href="#"><button class="btn" id="button3">Daftar Bionix</button></a>
             </div>
           </section>
 
@@ -248,7 +252,7 @@
       </footer>
 
   <!--Script-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/custom.js"></script>
