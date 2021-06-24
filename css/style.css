@@ -73,6 +73,7 @@
   width: 120px;
   height: auto;
   margin-left: 80px;
+  transition: all 0.3s ease;
 }
 .nav {
   display: flex;
@@ -114,7 +115,7 @@
   display: none; 
 }
 .navbar .nav-item:hover .dropdown-menu{
-  display: block; 
+  display: inline-block; 
 }
 .navbar .nav-item .dropdown-menu{ 
   margin-top:0; 
@@ -196,7 +197,9 @@ header .container {
   margin-left: 20%;
   margin-right: 20%;
 }
-.description p {
+.description p,
+#slabout #descbox-about .description p,
+#clabout #descbox-about .description p {
   font-family: "Hind Regular";
   font-weight: 650;
   font-size: 20px;
@@ -308,9 +311,9 @@ header .container {
 }
 
 #slabout #descbox-about .description{
-  margin: 100px 0 200px 0;
+  margin: 10rem 0 10rem 0;
   background: #FFCAC8;
-  padding: 28px 100px 8px 100px;
+  padding: 1.5rem;
   border-radius: 10px;
 }
 #slabout #descbox-about .description p{
@@ -331,7 +334,7 @@ header .container {
 #clabout #descbox-about .description{
   margin: 100px 0 200px 0;
   background: #FFCAC8;
-  padding: 28px 100px 8px 100px;
+  padding: 1rem;
   border-radius: 10px;
 }
 #clabout #descbox-about .description p{
@@ -399,10 +402,10 @@ footer .container{
   .navbar .navbar-collapse{
     background: #fb5f57;
     border-radius: 1rem;
-    top: 0.5rem;
+    margin-top: 1rem;
   }
   .navbar .list:focus{
-    top: 0.5rem;
+    top: 1rem;
   }
   .navbar .menu-btn{
     border-radius: 1rem;
@@ -419,6 +422,10 @@ footer .container{
     border-style: outset;
     border: none;
   }
+  #slabout #descbox-about .text-coming-soon{
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
   #header-row h1 {
     font-size: 2rem;
   }
@@ -428,23 +435,15 @@ footer .container{
   nav ul{
     font-size: 19px;
   }
-  #timeline {
-    background-size: 50%, 50%;
-  }
-  #footer {
-    background-size: 40%, 40%;
-  }
 }
-
 @media (max-width: 768px) {
   #header-row h1 {
     font-size: 1.8rem;
   }
-  #timeline {
-    background-size: 40%, 40%;
-  }
-  #footer {
-    background-size: 40%, 40%;
+  .text-coming-soon,
+  #slabout #descbox-about .text-coming-soon,
+  #clabout #descbox-about .text-coming-soon{
+    font-size: 4rem;
   }
 }
 @media (max-width: 576px) {
@@ -454,8 +453,7 @@ footer .container{
   .text-coming-soon,
   #slabout #descbox-about .text-coming-soon,
   #clabout #descbox-about .text-coming-soon{
-    font-size: 69px;
-    text-align: center;
+    font-size: 2.5rem;
   }
   .text-stay-tune, .text-stay-tune span{
     font-size: 1rem;
@@ -478,9 +476,8 @@ footer .container{
   .text-coming-soon,
   #slabout #descbox-about .text-coming-soon,
   #clabout #descbox-about .text-coming-soon{
-    font-size: 45px;
+    font-size: 2rem;
     -webkit-text-stroke-width: 1.25px;
     letter-spacing: 0.5rem;
-    text-align: center;
   }
 }
