@@ -26,7 +26,7 @@
 
 /*general*/
 .bg{
-  background-image: url(../img/background-bionix.svg);
+  background-image: url("../img/background-bionix.svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -304,10 +304,12 @@ header .container {
 
 
 /* Student level start */
-#slabout, #slbenefit, #sltimeline{
-  background-image: url(../img/floating-rock.svg);
-  background-position:top right;
+#slabout, #slbenefit, #sltimeline,
+#clabout, #clbenefit, #cltimeline{
+  background-image: url("../img/floating-rock.svg"), url("/img/landscape-planet-bawah.png");
+  background-position:top right, bottom;
   background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 #slabout #descbox-about .description{
