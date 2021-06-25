@@ -40,14 +40,23 @@
         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2 list" id="collapse_target">
           <ul class="border-0 nav navbar-nav nav-tabs ml-auto" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a>
+              <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+              <!-- <a class="nav-link active" href="#home" data-toggle="tab" role="tab">Home</a> -->
             </li>
             <li class="nav-item dropdown" role="presentation" id="sl-dropdown-item">
               <a class="nav-link" href="#slabout" data-toggle="tab" role="tab">Student Level<i class="fas fa-angle-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#slabout" data-toggle="tab" role="tab">About<i class="fas fa-angle-right"></i></a></li>
-                <li><a class="dropdown-item" href="#slbenefit" data-toggle="tab" role="tab">Benefit<i class="fas fa-angle-right"></i></a></li>
-                <li><a class="dropdown-item" href="#sltimeline" data-toggle="tab" role="tab">Timeline<i class="fas fa-angle-right"></i></a></li>
+                <li><button class="nav-link" id="home-tab" data-toggle="tab" data-target="#slabout" type="button" role="tab" aria-controls="home" aria-selected="true">About<i class="fas fa-angle-right"></i></button>
+                  <!-- <a class="dropdown-item" href="#slabout" data-toggle="tab" role="tab">About<i class="fas fa-angle-right"></i></a> -->
+                </li>
+                <li>
+                  <button class="nav-link" id="home-tab" data-toggle="tab" data-target="#slabout" type="button" role="tab" aria-controls="home" aria-selected="true">Benefit<i class="fas fa-angle-right"></i></button>
+                  <!-- <a class="dropdown-item" href="#slbenefit" data-toggle="tab" role="tab">Benefit<i class="fas fa-angle-right"></i></a> -->
+                </li>
+                <li>
+                  <button class="nav-link" id="home-tab" data-toggle="tab" data-target="#slabout" type="button" role="tab" aria-controls="home" aria-selected="true">Timeline<i class="fas fa-angle-right"></i></button>
+                  <!-- <a class="dropdown-item" href="#sltimeline" data-toggle="tab" role="tab">Timeline<i class="fas fa-angle-right"></i></a> -->
+                </li>
                 </ul>
             </li>
             <li class="nav-item dropdown" role="presentation" id="cl-dropdown-item">
