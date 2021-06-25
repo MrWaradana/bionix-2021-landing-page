@@ -119,32 +119,27 @@
   display: none; 
 }
 .navbar .nav-item:hover .dropdown-menu{
-  display: inline-block; 
+  display: block; 
 }
 .navbar .nav-item .dropdown-menu{ 
   margin-top:0; 
   border-radius: 10px;
   padding: 15px;
 }
-.navbar .nav-item .dropdown-menu button{
+.navbar .nav-item .dropdown-menu a{
   font-size: 22px;
   font-family: "Hind Bold";
-  padding: 15px 10px 10px 20px;
-  margin: 8px;
   border-radius: 10px;
-  width: 175px;
+  width: 10rem;
+  padding: 0.5rem;
 }
 .navbar .nav-item .dropdown-menu .fas{
   float: right;
   padding-top: 5px;
 }
-.navbar .nav-item .dropdown-menu button:hover{
+.navbar .nav-item .dropdown-menu a:hover{
   background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
   text-decoration: none;
-}
-.navbar .nav-item .dropdown-menu button.active{
-  background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
-  color: #111;
 }
 .navbar .login{
   background: linear-gradient(270.02deg, #364A82 0%, #285B70 44.34%, #328796 99.96%);
@@ -309,7 +304,7 @@ header .container {
 
 
 /* Student level start */
-#slabout{
+#slabout, #slbenefit, #sltimeline{
   background-image: url(../img/floating-rock.svg);
   background-position:top right;
   background-repeat: no-repeat;
@@ -415,7 +410,12 @@ footer .container{
     width: 100vw;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+  .navbar .nav-item:hover{
+    display: block;
+    position: relative;
+    text-align: left;
+  }
   .navbar .navbar-collapse{
     background: #fb5f57;
     border-radius: 1rem;
