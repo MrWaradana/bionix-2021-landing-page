@@ -16,6 +16,10 @@
   src: url("../fonts/SF\ Distant\ Galaxy.ttf");
 }
 @font-face {
+  font-family: "Galaxy Alternate Italic";
+  src: url("../fonts/SF\ Distant\ Galaxy\ Alternate\ Italic.ttf");
+}
+@font-face {
   font-family: "Hind Bold";
   src: url("../fonts/Hind-Bold.ttf");
 }
@@ -193,16 +197,13 @@ header .container {
   text-align: center;
  }
 #descbox-about {
-  margin-top: 7%;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 0 6% 0 6%;
 }
-.description p,
-#slabout #descbox-about .description p,
-#clabout #descbox-about .description p {
+#descbox-about .description{
+  margin: 12%;
+  font-weight: 500;
   font-family: "Hind Regular";
-  font-weight: 650;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 .countdown {
   text-align: center;
@@ -311,46 +312,86 @@ header .container {
   background-repeat: no-repeat;
   background-size: 100vw;
 }
-
 #slabout #descbox-about .description{
-  margin: 10rem 0 10rem 0;
+  margin: 5rem 1% 10vw 1%;
   background: #FFCAC8;
-  padding: 1.5rem;
+  padding: 3rem 3rem 1rem 3rem;
   border-radius: 10px;
 }
 #slabout #descbox-about .description p{
   font-family: "Hind Bold";
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.4rem;
   text-align: center;
 }
-#slabout .container img{
-  margin-bottom: 700px;
+#slabout #tahapan-student-level,
+#clabout #tahapan-student-level{
+  background: url("/img/garis.svg");
+  background-repeat: no-repeat;
+  background-position:left top;
+  background-position-y: 5.5%;
+  background-size: 21vw;
 }
-#slbenefit .container img{
-  margin-top: 100px;
-  margin-bottom: 700px;
+
+#slabout #tahapan-student-level h1,
+#slabout #persyaratan-student-level h1,
+#clabout #tahapan-student-level h1,
+#clabout #persyaratan-student-level h1{
+  font-family:"Galaxy Alternate Italic";
+  text-align: left;
+  margin-left: 11%;
+  margin-bottom: 0;
+  font-size: 4.5vw;
+  color: #3298A4;
 }
+#slabout #tahapan-student-level h2,
+#slabout #persyaratan-student-level h2,
+#clabout #tahapan-student-level h2,
+#clabout #persyaratan-student-level h2{
+  font-family:"Audimat Mono Bold";
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 3.2vw;
+  color: #3298A4;
+}
+#slabout #tahapan-student-level p,
+#slabout #persyaratan-student-level p,
+#clabout #tahapan-student-level p,
+#clabout #persyaratan-student-level p{
+  font-family:"Hind Regular";
+  text-align: left;
+  margin-left: 3vw;
+  margin-bottom: 0;
+  font-size: 1.5vw;
+  letter-spacing: 0.125vw;
+  color: black;
+}
+#slabout #persyaratan-student-level,
+#clabout #persyaratan-student-level{
+  background: url("/img/garis.svg");
+  background-repeat: no-repeat;
+  background-position:left top;
+  background-position-y: 35%;
+  background-size: 21vw;
+}
+#slabout .space{
+  height: 30vw;
+}
+
+
 
 /* college level section start */
 #clabout #descbox-about .description{
-  margin: 100px 0 200px 0;
+  margin: 5rem 1% 10rem 1%;
   background: #FFCAC8;
-  padding: 1rem;
+  padding: 3rem 3rem 1rem 3rem;
   border-radius: 10px;
 }
 #clabout #descbox-about .description p{
   font-family: "Hind Bold";
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.4rem;
   text-align: center;
-}
-#clabout .container img{
-  margin-bottom: 700px;
-}
-#clbenefit .container img{
-  margin-top: 100px;
-  margin-bottom: 700px;
 }
 #clabout img,
 #clbenefit img,
@@ -431,7 +472,7 @@ footer .container{
     padding-top: 0.5rem;
     display: block;
     font-size: 1.5rem;
-    color:#f7f7f7;
+    color:white;
     background: linear-gradient(90deg, rgba(54, 74, 130, 0.8), rgba(40, 91, 112, 1), rgba(50, 135, 150, 0.8));
     outline: none;
     border-style: outset;
