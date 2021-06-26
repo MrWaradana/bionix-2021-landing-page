@@ -599,18 +599,65 @@ footer .container{
   .text-stay-tune, .text-stay-tune span{
     font-size: 1rem;
   }
+  #slabout #tahapan-student-level,
+#clabout #tahapan-student-level{
+  background-position-y: 2%;
+  background-size: 29vw;
+}
+#slabout #persyaratan-student-level,
+#clabout #persyaratan-student-level{
+  background-position-y: 24%;
+  background-size: 29vw;
+}
   #home .description p,
   #slabout #descbox-about .description p,
   #clabout #descbox-about .description p{
     font-size: 1rem;
   }
-  #timeline {
-    background-size: 50%, 50%;
+  #slabout #tahapan-student-level h1,
+  #slabout #persyaratan-student-level h1,
+  #clabout #tahapan-student-level h1,
+  #clabout #persyaratan-student-level h1{
+    font-size: 1.5rem;
   }
-  #footer {
-    background-size: 40%, 40%;
-    text-align: center;
-  }
+  #slabout #tahapan-student-level h2,
+#slabout #persyaratan-student-level h2,
+#clabout #tahapan-student-level h2,
+#clabout #persyaratan-student-level h2{
+  font-size: 1.25rem;
+}
+#slabout #tahapan-student-level p,
+#slabout #persyaratan-student-level p,
+#clabout #tahapan-student-level p,
+#clabout #persyaratan-student-level p{
+  font-size: 1rem;
+}
+
+#slbenefit #fasilitas-student-level,
+#clbenefit #fasilitas-student-level{
+  background-position-y: 4%;
+  background-size: 21vw;
+}
+#slbenefit #hadiah-student-level,
+#clbenefit #hadiah-student-level{
+  background-position-y: 5%;
+  background-size: 21vw;
+}
+#slbenefit #fasilitas-student-level h1,
+#clbenefit #fasilitas-student-level h1,
+#slbenefit #hadiah-student-level h1,
+#clbenefit #hadiah-student-level h1{
+  font-size: 1.5rem;
+}
+#slbenefit #fasilitas-student-level p,
+#clbenefit #fasilitas-student-level p{
+  font-size: 1rem;
+  letter-spacing: 0.125vw;
+}
+#slbenefit #fasilitas-student-level p i,
+#clbenefit #fasilitas-student-level p i{
+  font-size: 2rem;
+}
 }
 
 @media (max-width: 426px){
