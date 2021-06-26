@@ -399,6 +399,41 @@ header .container {
   width: 99.4vw;
 }
 
+
+/* error page section start */
+.error-content{
+  background: url("/img/404-screen.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 60vh;
+}
+#error-section{
+  text-align: left;
+  margin-top: 14%;
+  margin-left: 10%;
+}
+#error-section h1{
+  font-family: "Audimat Mono Bold";
+  color: white;
+  font-size: 7rem;
+  margin-bottom: 0;
+}
+#error-section h2{
+  font-family: "Hind Bold";
+  color: white;
+  font-size: 2rem;
+}
+#error-section .tombol-error a button{
+  border-radius: 12px;
+  color: white;
+  font-family: "Hind Bold";
+  width: 15%;
+  background: linear-gradient(270.02deg, #364A82 0%, #285B70 44.34%, #328796 99.96%);
+  margin-top: 1%;
+}
+
+
+/* footer section start */
 .footer {
   background-color: #530E0B;
   max-width: 100%;
