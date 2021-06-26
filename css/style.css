@@ -378,6 +378,46 @@ header .container {
   height: 30vw;
 }
 
+#slbenefit #fasilitas-student-level,
+#clbenefit #fasilitas-student-level{
+  background: url("/img/garis.svg");
+  background-repeat: no-repeat;
+  background-position:left top;
+  background-position-y: 12%;
+  background-size: 21vw;
+  margin-top: 20%;
+}
+#slbenefit #hadiah-student-level,
+#clbenefit #hadiah-student-level{
+  background: url("/img/garis.svg");
+  background-repeat: no-repeat;
+  background-position:left top;
+  background-position-y: 2%;
+  background-size: 21vw;
+}
+#slbenefit #fasilitas-student-level h1,
+#clbenefit #fasilitas-student-level h1,
+#slbenefit #hadiah-student-level h1,
+#clbenefit #hadiah-student-level h1{
+  font-family:"Galaxy Alternate Italic";
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 0;
+  font-size: 4.5vw;
+  color: #3298A4;
+}
+#slbenefit #fasilitas-student-level p i,
+#clbenefit #fasilitas-student-level p i{
+  color: #3298A4;
+}
+#slbenefit #fasilitas-student-level p,
+#clbenefit #fasilitas-student-level p{
+  font-family:"Hind Regular";
+  text-align: left;
+  font-size: 1.5vw;
+  letter-spacing: 0.125vw;
+  color: black;
+}
 
 
 /* college level section start */
