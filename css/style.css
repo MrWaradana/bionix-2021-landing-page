@@ -140,7 +140,7 @@
 }
 .navbar .nav-item .dropdown-menu .fas{
   float: right;
-  padding-top: 0.8%;
+  padding-top: 3%;
 }
 .navbar .nav-item .dropdown-menu a:hover{
   background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
