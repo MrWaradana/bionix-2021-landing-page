@@ -128,7 +128,7 @@
 .navbar .nav-item .dropdown-menu{ 
   margin-top:0; 
   border-radius: 10px;
-  padding: 15px;
+  padding: 1rem;
 }
 .navbar .nav-item .dropdown-menu a{
   font-size: 22px;
@@ -136,14 +136,20 @@
   border-radius: 10px;
   width: 10rem;
   padding: 0.5rem;
+  margin-top: 5%;
 }
 .navbar .nav-item .dropdown-menu .fas{
   float: right;
-  padding-top: 5px;
+  padding-top: 0.8%;
 }
 .navbar .nav-item .dropdown-menu a:hover{
   background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
   text-decoration: none;
+}
+.navbar .nav-item .dropdown-menu a.active{
+  background: linear-gradient(90deg, rgba(54, 74, 130, 0.5) 0%, rgba(40, 91, 112, 0.5) 52.08%, rgba(50, 135, 150, 0.5));
+  text-decoration: none;
+  color: black;
 }
 .navbar .login{
   background: linear-gradient(270.02deg, #364A82 0%, #285B70 44.34%, #328796 99.96%);
@@ -603,6 +609,7 @@ footer .container{
   #clabout #persyaratan-student-level h2{
     font-size: 1.25rem;
   }
+
   #slabout #tahapan-student-level p,
   #slabout #persyaratan-student-level p,
   #clabout #tahapan-student-level p,
