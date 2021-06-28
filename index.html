@@ -15,6 +15,7 @@
 
   <link rel="icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/normalize.min.css" />
   <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome-all.min.css" />
@@ -95,47 +96,131 @@
       </nav>
    </div>
 
-        <!--Header-->
-        <header>
-          <div class="container">
-            <div class="row text-center" id="header-row">
-              <div class="col-12">
-                <img src="img/bionix.png" alt="" class="img-fluid" width="500px"/>
+
+        <!-- swiper section start -->
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+              <div class="about">
+              <img src="/img/line-bionix.svg" class="img-fluid" alt="">
+              <h1>BUSINESS AND IT OLYMPIAD<br>
+                ON INFORMATION SYSTEMS EXPO</h1>
+                <p>Business and IT Olympiad on Information Systems Expo, olimpiade bisnis dan IT terbesar di Indonesia<br> untuk tingkat pelajar SMA/SMK sederajat dan mahasiswa.</p>
+                <a href="#" class="btn">KENALI LEBIH LANJUT</a>
               </div>
-              <div class="col-12">
-                <h1>BUSINESS AND IT OLYMPIAD <br>ON INFORMATION SYSTEM EXPO</h1>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+          
+
+        <!-- kategori lomba section start -->
+        <div class="kategori-lomba container-fluid text-center">
+          <h2>Kategori Lomba</h2>
+          <div class="row">
+            <div class="col bionix-sl">
+              <h2>BIONIX Student Level</h2>
+              <p>Olimpiade bisnis dan IT terbesar<br>di Indonesia untuk tingkat pelajar<br>SMA/SMK sederajat.</p>
+              <a href="#" class="btn">Daftar</a>
+              <a href="#" class="btn">Selengkapnya</a>
+            </div>
+            <div class="col bionix-cl">
+              <h2>BIONIX College Level</h2>
+              <p>Kompetisi studi kasus bisnis<br>nasional untuk tingkat mahasiswa<br>di Indonesia.</p>
+              <a href="#" class="btn">Daftar</a>
+              <a href="#" class="btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- total hadiah section start -->
+        <div class="total-hadiah text-center">
+          <h2>Total Hadiah</h2>
+          <div class="button-hadiah">
+            <a href="#" class="btn"><i class="fas fa-medal"></i> Bionix Student Level</a>
+            <a href="#" class="btn"><i class="fas fa-medal"></i> Bionix College Level</a>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <h4>Juara 3</h4>
+                  <img src="/img/juara3-bionix-sl.png" alt="">
+                  <p>Rp 2.000.000<br>+ Sertifikat</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <h4>Juara 1</h4>
+                  <img src="/img/juara1-bionix-sl.png" alt="">
+                  <p>Freepass SNMPTN
+                    Sistem Informasi ITS 2022<br>+ Rp 5.000.000
+                    Sertifikat</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <h4>Juara 2</h4>
+                  <img src="/img/juara2-bionix-sl.png" alt="">
+                  <p>Rp 3.000.000<br>+ Sertifikat</p>
+                </div>
               </div>
             </div>
           </div>
-        </header>
+        </div>
 
-
-        <div class="tab-content">
-          <!--home section-->
-          <section id="home">
-            <div id="descbox-about">
-              <div class="description">
-                <p>
-                  Business and IT Olympiad on Information System Expo adalah bagian dari serangkaian acara ISE! dengan konsep olimpiade dan kompetisi tingkat nasional yang ditujukan bagi pelajar SMA/SMK/sederajat dan mahasiswa. Bionix ISE! 2021 hadir dengan konsep daring penuh yang memadukan teori dan implementasi dari manajemen, bisnis, dan teknologi informasi.
-                </p>
+        <!-- swiper 2 section start -->
+        <div class="swiper-bottom">
+          <div class="swiper-container mySwiper swiper-2">
+            <h2 class="text-center">Apa Kata Mereka Tentang BIONIX?</h2>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1-2">
+                <div class="content">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-4 img-nabila rounded-right">
+                      </div>
+                      <div class="col-6 desc">
+                        <h2>Bisa dapat <span>Free Pass SNMPTN</span>, <span>banyak relasi</span>, dan <span>wawasan baru!</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-4 img-arif rounded-right">
+                      </div>
+                      <div class="col-6 desc">
+                        <h2>Bisa dapat <span>Free Pass SNMPTN</span>, <span>banyak relasi</span>, dan <span>wawasan baru!</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="text-coming-soon">COMING SOON</div>
-            <div class="text-stay-tune"><span>Stay tuned,</span> our website is on the way!</div>
-            <div class="countdown mt-3">
-              <li class="rounded p-1"><span id="days">00</span> days</li>
-              <li class="rounded p-1"><span id="hours">00</span> hours</li>
-              <li class="rounded p-1"><span id="minutes">00</span>minutes</li>
-              <li class="rounded p-1"><span id="seconds">00</span>seconds</li>
-            </div>
-            <div class="tombol">
-              <a href="#"><button class="btn" id="button2">Download Guideline</button></a>
-              <a href="#"><button class="btn" id="button3">Daftar Bionix</button></a>
-            </div>
-          </section>        
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+        
+        <div class="bottom-text text-center">
+          <div class="desc">
+            <h2>Tunggu Apa Lagi? Daftar BIONIX Sekarang!</h2>
+            <a href="#" class="btn">Buat Akun ISE!</a>
+          </div>
         </div>
 
 
+        
         <!--footer-->
         <footer class="footer">
           <div class="container" id="footer">
@@ -210,6 +295,7 @@
 
   <!--Script-->
   <script src="js/jquery.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/custom.js"></script>
