@@ -81,16 +81,19 @@
   transition: all 0.3s ease;
 }
 #navbar2{
+  z-index: 99;
   margin-top: 5.6em;
-  background: rgb(255, 255, 255, .65);
+  background: rgba(211, 211, 211, 0.65);
 }
 .navbar.sticky{
   background: #E9E8E1;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
 }
-#navbarsl.sticky{
-  background: #E9E8E1;
+
+.navbarsl.sticky{
+  box-shadow: none;
 }
+
 .navbar-custom{
   height: 100px;
 }
@@ -265,6 +268,38 @@
 .swiper-button-prev{
 color: white;
 }
+
+/* header sl section start */
+.header {
+  padding-top: 15em;
+  margin-bottom: 8em;
+  background: url("/img/header-sl.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  color: white;
+  border-radius: 30px;
+}
+.header .col-4, .header .col-8{
+  padding: 0;
+}
+
+.header h1{
+  font-family: "Mosk Extra-bold";
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+}
+
+.header img{
+  width: 14em;
+  color: white;
+}
+.header p{
+  font-family: "Hind Regular";
+  font-size: 1.15rem;
+  letter-spacing: .2rem;
+}
+
 
 /* kategori lomba start */
 .kategori-lomba{
