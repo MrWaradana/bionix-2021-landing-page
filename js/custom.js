@@ -10,6 +10,11 @@ $(document).ready(function(){
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
+    // centeredSlides: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },    
     loop: true,
     pagination: {
       el: ".swiper-pagination",
