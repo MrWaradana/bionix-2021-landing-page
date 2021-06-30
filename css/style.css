@@ -1,31 +1,15 @@
   /*Font*/
 @font-face {
-  font-family: "Audimat Mono Bold";
-  src: url("../fonts/AUDIMB__.TTF");
-}
-@font-face {
-  font-family: "Audimat Mono Reg";
-  src: url("../fonts/AUDIMRG_.TTF");
-}
-@font-face {
-  font-family: "Galaxy Outline";
-  src: url("../fonts/SF\ Distant\ Galaxy\ Outline.ttf");
-}
-@font-face {
-  font-family: "Galaxy Regular";
-  src: url("../fonts/SF\ Distant\ Galaxy.ttf");
-}
-@font-face {
-  font-family: "Galaxy Alternate Italic";
-  src: url("../fonts/SF\ Distant\ Galaxy\ Alternate\ Italic.ttf");
-}
-@font-face {
   font-family: "Hind Bold";
   src: url("../fonts/Hind-Bold.ttf");
 }
 @font-face {
   font-family: "Hind Semi Bold";
   src: url("../fonts/Hind-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Hind Normal";
+  src: url("../fonts/Hind-Medium.ttf");
 }
 @font-face {
   font-family: "Hind Regular";
@@ -72,18 +56,41 @@
 
 
 /* navbar section start */
-.nav-container{
+/* .nav-container{
   width: 100%;
-  font-size: 1.1rem;
-}
+  font-size: 1.28rem;
+} */
 .navbar{
   background: #E9E8E1;
   transition: all 0.3s ease;
+  font-size: 1.28rem;
 }
 #navbar2{
   z-index: 99;
-  margin-top: 5.6em;
+  margin-top: 4.7em;
   background: rgba(211, 211, 211, 0.65);
+}
+#navbar2 #daftar{
+  margin-left: auto;
+  background: #FF726B;
+  padding: 0.5em 3em;
+  border-radius: 8px;
+  color: white;
+  font-family: "Hind Normal";
+  letter-spacing: 2px;
+}
+#navbar2 #guidebook{
+  background: #C37976;
+  margin-right: 4em;
+  margin-left: 2em;
+  border-radius: 8px;
+  color: white;
+  padding: 0.5em 1em;
+  font-family: "Hind Normal";
+  letter-spacing: 2px;
+}
+#navbar2 #guidebook img{
+  width: 1em;
 }
 .navbar.sticky{
   background: #E9E8E1;
