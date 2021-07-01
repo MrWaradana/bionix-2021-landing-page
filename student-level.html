@@ -36,10 +36,10 @@
   
   <!--navbar section-->
 
-      <nav class="navbar navbarsl navbar-custom fixed-top navbar-expand-lg container-fluid mb-5">
+      <nav class="navbar navbarsl navbar-custom fixed-top navbar-expand-lg container-fluid">
         <div class="logo"><a class="navbar-brand" href="index.html"><img src="img/logo-ise-2021.svg" alt="logo ISE! 2021" /></a></div>
         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2 list" id="collapse_target">
-          <ul class="border-0 nav navbar-nav nav-tabs ml-auto">
+          <ul class="border-0 nav navbar-nav nav-tabs ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="after-login.html">Home</a>
             </li>
@@ -61,10 +61,12 @@
             </li>
           </ul>
         </div>
-        <button class="navbar-toggle menu-btn mr-5" data-toggle="collapse" data-target="#collapse_target">
+        <button class="navbar-toggle menu-btn mr-5" data-bs-toggle="collapse" data-bs-target="#collapse_target">
           <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
       </nav>
+
+      
       <nav class="navbar navbarsl navbar-custom fixed-top navbar-expand-lg container-fluid" id="navbar2">
         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2 list" id="collapse_target">
           <ul class="border-0 nav navbar-nav nav-tabs ml-5">
@@ -87,14 +89,14 @@
           <a href="#" class="nav-link" id="daftar">Daftar</a>
           <a href="#" class="nav-link" id="guidebook"><img src="/img/DownloadSimple.svg" alt=""> Guidebook</a>
         </div>
-        <button class="navbar-toggle menu-btn mr-5" data-toggle="collapse" data-target="#collapse_target">
+        <button class="navbar-toggle menu-btn mr-5" data-bs-toggle="collapse" data-bs-target="#collapse_target">
           <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
       </nav>
 
 
 
-      <!-- header section start -->
+      <!-- header student level section start -->
       <header class="header">
         <div class="container">
           <div class="row">
@@ -109,43 +111,105 @@
         </div>
       </header>
 
-        <!-- kategori lomba section start -->
-        <div class="kategori-lomba container-fluid text-center">
-          <h1>Kategori Lomba</h1>
-          <div class="row">
-            <div class="col bionix-sl">
-              <h2>BIONIX Student Level</h2>
-              <p>Olimpiade bisnis dan IT terbesar<br>di Indonesia untuk tingkat pelajar<br>SMA/SMK sederajat.</p>
-              <a href="#" class="btn daftar">Daftar</a>
-              <a href="#" class="btn selengkapnya">Selengkapnya</a>
+        <!-- tahapan student level section start -->
+        <div class="tahapan text-center" id="tahapan">
+          <h1>Tahapan</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <h5>Penyisihan<br>Regional</h5>
+              </div>
+              <div class="col">
+                <h5>Penyisihan<br>Nasional</h5>
+              </div>
+              <div class="col">
+                <h5>Semifinal</h5>
+              </div>
+              <div class="col">
+                <h5>Final</h5>
+              </div>
             </div>
-            <div class="col bionix-cl">
-              <h2>BIONIX College Level</h2>
-              <p>Kompetisi studi kasus bisnis<br>nasional untuk tingkat mahasiswa<br>di Indonesia.</p>
-              <a href="#" class="btn daftar">Daftar</a>
-              <a href="#" class="btn selengkapnya">Selengkapnya</a>
+            <div class="row" id="garis-tahapan">
+              <div class="col ">
+                <div class="nomor">
+                  <h3>1</h3>
+                </div>
+              </div>
+              <div class="col">
+                <div class="nomor">
+                  <h3>2</h3>
+                </div>
+              </div>
+              <div class="col">
+                <div class="nomor">
+                  <h3>3</h3>
+                </div>
+              </div>
+              <div class="col">
+                <div class="nomor">
+                  <h3>4</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex col">
+                <div class="card" id="card-tahapan">
+                  <div class="card-body" id="card-body-tahapan">
+                    <h3>Penyisihan Region</h3>
+                    <hr>
+                    <p>Peserta akan berkompetisi melawan tim lain yang berada dalam satu region yang sama. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex col">
+                <div class="card" id="card-tahapan">
+                  <div class="card-body" id="card-body-tahapan">
+                    <h3>Penyisihan Nasional</h3>
+                    <hr>
+                    <p>Peserta akan berkompetisi melawan tim lain dari seluruh Indonesia. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex col">
+                <div class="card" id="card-tahapan">
+                  <div class="card-body" id="card-body-tahapan">
+                    <h3>Semifinal</h3>
+                    <hr>
+                    <p> Peserta akan membuat sebuah ide bisnis berdasarkan tema yang telah ditentukan dan menuangkannya dalam bentuk proposal dan video</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex col">
+                <div class="card" id="card-tahapan">
+                  <div class="card-body" id="card-body-tahapan">
+                    <h3>Final</h3>
+                    <hr>
+                    <p>Tahap terakhir yang harus dilalui setiap peserta. Pada tahap ini, peserta akan mempresentasikan ide bisnis yang telah dibuat sebelumnya di hadapan juri yang kompeten di bidang bisnis dan teknologi informasi</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
         <!-- total hadiah section start -->
-        <div class="total-hadiah text-center">
+        <div class="total-hadiah text-center" id="total-hadiah-sl">
           <h2>Total Hadiah</h2>
           <div class="button-hadiah">
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active px-5 py-3 m-3" id="hadiahsl-tab" data-toggle="tab" data-target="#hadiahsl" type="button" role="tab" aria-controls="hadiahsl" aria-selected="true"><img src="/img/medali-sl.svg" alt=""> Bionix Student Level</button>
+                <button class="nav-link active px-5 py-3 m-3" id="hadiahsl-tab" data-bs-toggle="tab" data-bs-target="#hadiahsl" type="button" role="tab" aria-controls="hadiahsl" aria-selected="true"><img src="/img/medali-sl.svg" alt=""> Bionix Student Level</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link px-5 py-3 m-3" id="hadiahcl-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="hadiahcl" aria-selected="false"><img src="/img/medali-cl.svg" alt=""> Bionix College Level</button>
+                <button class="nav-link px-5 py-3 m-3" id="hadiahcl-tab" data-bs-toggle="tab" data-bs-target="#hadiahcl" type="button" role="tab" aria-controls="hadiahcl" aria-selected="false"><img src="/img/medali-cl.svg" alt=""> Bionix College Level</button>
               </li>
             </ul>
           </div>
           <div class="tab-content">
             <div class="tab-pane fade show active" id="hadiahsl" role="tabpanel">
               <div class="container">
-                <div class="d-flex row ">
-                  <div class="d-flex col justify-content-end">
+                <div class="row">
+                  <div class="col justify-content-end">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 3</h4>
@@ -154,7 +218,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex col justify-content-center">
+                  <div class="col justify-content-center">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 1</h4>
@@ -163,7 +227,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex col justify-content-start">
+                  <div class="col justify-content-start">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 2</h4>
@@ -175,10 +239,10 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel">
+            <div class="tab-pane fade" id="hadiahcl" role="tabpanel">
               <div class="container">
-                <div class="d-flex row ">
-                  <div class="d-flex col justify-content-end">
+                <div class="row ">
+                  <div class="col justify-content-end">
                     <div class="card juara3">
                       <div class="card-body">
                         <h4>Juara 3</h4>
@@ -187,7 +251,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex col justify-content-center">
+                  <div class="col justify-content-center">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 1</h4>
@@ -196,7 +260,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex col justify-content-start">
+                  <div class="col justify-content-start">
                     <div class="card juara2">
                       <div class="card-body">
                         <h4>Juara 2</h4>
@@ -212,55 +276,120 @@
           
         </div>
 
-        <!-- swiper 2 section start -->
-        <div class="swiper-bottom">
-          <div class="swiper-container mySwiper swiper-2">
-            <h2 class="title text-center">Apa Kata Mereka Tentang BIONIX?</h2>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide slide1-2">
-                <div class="content">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-4 img-nabila rounded-right">
-                      </div>
-                      <div class="col-8 desc">
-                        <h2>Bisa dapat <span>Free Pass SNMPTN</span>, <span>banyak relasi</span>, dan <span>wawasan baru!</span></h2>
-                        <p>“Dari BIONIX, wawasanku lebih terbuka tentang sistem informasi dan dapat banyak wawasan baru yang sebelumnya gak aku dapetin di SMA. Selain itu, di BIONIX aku juga dapet banyak temen baru yang bahkan masih keep contact sampai sekarang sehingga dari sini aku juga bisa memperluas relasi. Last but not least, aku juga dapat Free Pass SNMPTN Sistem Informasi ITS berkat BIONIX.”</p>
-                        <h4>Nabila Aprillia<br><span>1st Winner BIONIX 2019</span></h4>
-                      </div>
+        <!-- timeline student level section -->
+        <div class="timeline text-center" id="timeline-student-level">
+          <h1>Timeline</h1>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <h5>3 Jul - 20 Sep 2021</h5>
+              </div>
+              <div class="col">
+                <h5>26 Sep 2021</h5>
+              </div>
+              <div class="col">
+                <h5>3 Okt 2021</h5>
+              </div>
+              <div class="col">
+                <h5>5 - 23 Okt 2021</h5>
+              </div>
+              <div class="col">
+                <h5>6 Nov 2021</h5>
+              </div>
+              <div class="col">
+                <h5>7 Nov 2021</h5>
+              </div>
+            </div>
+            <div class="row" id="circle-timeline">
+              <div class="col">
+                <div class="circle" id="rocket">
+                  <img src="/img/rocket.png" alt="">
+                </div>
+              </div>
+              <div class="col">
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div class="circle"></div>
+              </div>
+              <div class="col">
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h5>Pendaftaran</h5>
+              </div>
+              <div class="col">
+                <h5>Penyisihan 1</h5>
+              </div>
+              <div class="col">
+                <h5>Penyisihan 2</h5>
+              </div>
+              <div class="col">
+                <h5>Semifinal</h5>
+              </div>
+              <div class="col">
+                <h5>Final</h5>
+              </div>
+              <div class="col">
+                <h5>Awarding</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ section -->
+        <div class="faq text-center">
+          <h1>FAQ</h1>
+          <div class="container">
+            <div class="row">
+              <div class="accordion" id="accordionFaq">
+                <div class="accordion-item" id="AccordionItemOne" >
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Apa saja syarat yang diperlukan untuk mengikuti BIONIX Student Level?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Satu tim terdiri dari 2 orang dan berasal dari sekolah yang sama.</li>
+                        <li>Membayar biaya pendaftaran sebesar Rp 89.000/tim.</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="content">
-                  <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-4 img-arif rounded-right">
-                      </div>
-                      <div class="col-8 desc">
-                        <h2>Bisa dapat <span>Free Pass SNMPTN</span>, <span>banyak relasi</span>, dan <span>wawasan baru!</span></h2>
-                        <p>“Dari BIONIX, wawasanku lebih terbuka tentang sistem informasi dan dapat banyak wawasan baru yang sebelumnya gak aku dapetin di SMA. Selain itu, di BIONIX aku juga dapet banyak temen baru yang bahkan masih keep contact sampai sekarang sehingga dari sini aku juga bisa memperluas relasi. Last but not least, aku juga dapat Free Pass SNMPTN Sistem Informasi ITS berkat BIONIX.”</p>
-                        <h4>M Arif Nuriman<br><span>1st Winner BIONIX 2019</span></h4>
-                      </div>
+                <div class="accordion-item" id="AccordionItemTwo">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Fasilitas apa saja yang akan didapatkan oleh peserta?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Sertifikat digital untuk semua peserta yang telah diverifikasi identitasnya.
+                        </li>
+                        <li>Simulasi pengerjaan soal penyisihan (untuk waktu tertentu) dan pembahasannya sebanyak dua kali untuk semua peserta.
+                        </li>
+                        <li>Workshop pembuatan ide bisnis berbasis IT bersama dengan pemateri yang kompeten pada bidang bisnis</li>
+                      </ul>
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
           </div>
         </div>
         
-        <!-- tunggu apa lagi section -->
-        <div class="bottom-text text-center">
-          <div class="desc">
-            <h2>Tunggu Apa Lagi? Daftar BIONIX Sekarang!</h2>
-            <a href="#" class="btn">Buat Akun ISE!</a>
-          </div>
-        </div>
 
 
         
@@ -268,10 +397,10 @@
         <footer class="footer">
           <div class="container" id="footer">
             <div class="row">
-              <div class="col-12 col-sm-6 text-center text-sm-left">
+              <div class="col-12 col-sm-6 text-sm-start">
                 <img src="/img/logo-ise-2021-putih.svg" alt="logo ise 2021" class="img-fluid" width="120px" height="auto">
               </div>
-              <div class="col-12 col-sm-6 text-center text-sm-right" id="footer-right">
+              <div class="col-12 col-sm-6 text-sm-end" id="footer-right">
                 <h1>Temukan Kami di Sosial Media!</h1>
                 <div class="listsocmed">
                   <a href="https://ise-its.com/" target="_blank" title="Website">
@@ -300,7 +429,7 @@
             </div>
             <hr>
             <div class="row">
-              <div class="col col-sm-2 text-center text-sm-left">
+              <div class="col col-sm-2 text-sm-start">
                 <ul>
                   <p><strong>Our Events</strong></p>
                   <li><a href="#">ISE!</a></li>
@@ -308,14 +437,14 @@
                   <li><a href="#">Merch</a></li>
                 </ul>
               </div>
-              <div class="col col-sm-3 text-center text-sm-left">
+              <div class="col col-sm-3 text-sm-left">
                 <ul>
                   <p><strong>Bionix</strong></p>
                   <li><a href="#">Bionix Student Level</a></li>
                   <li><a href="#">Bionix College Level</a></li>
                 </ul>
               </div>
-              <div class="col col-sm-3 text-center text-sm-left">
+              <div class="col col-sm-3 text-sm-left">
                 <ul>
                   <p><strong>ICON</strong></p>
                   <li><a href="#">ICON Academy</a></li>
@@ -324,7 +453,7 @@
                   <li><a href="#">Virtual Intern & Job Fair</a></li>
                 </ul>
               </div>
-              <div class="col col-sm-3 text-center text-sm-left shop">
+              <div class="col col-sm-3 text-sm-left shop">
                 <ul>
                   <p><strong>SHOP</strong></p>
                   <li><a href="#">Merchandise<i class="fas fa-external-link-alt"></i></a></li>
@@ -344,7 +473,7 @@
   <!--Script-->
   <script src="js/jquery.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/custom.js"></script>
 </body>
