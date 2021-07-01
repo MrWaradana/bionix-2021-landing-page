@@ -156,6 +156,7 @@
   visibility: hidden;
   border-radius: 8px;
   padding: 1rem;
+  margin-top: 3em;
   -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
     -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
     -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
@@ -320,7 +321,9 @@ color: white;
   background: white;
   border: 8px solid #ECD0C8;
 }
-
+#nomor-college{
+  margin: 0 11em;
+}
 
 .nomor h3{
   font-size: 1.5rem;
@@ -331,6 +334,12 @@ color: white;
 #garis-tahapan{
   background: url("/img/garis-row-tahapan.svg");
   background-size: 70vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#garis-tahapancl{
+  background: url("/img/garis-row-tahapan.svg");
+  background-size: 60vw;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -416,6 +425,7 @@ color: white;
 /* total hadiah section start */
 #total-hadiah-sl{
   margin-top: 8em;
+  margin-bottom: 10em ;
 }
 .total-hadiah h2{
   font-family: "Mosk Extra-bold";
@@ -501,6 +511,12 @@ color: white;
   background-repeat: no-repeat;
   background-position: center;
 }
+#circle-timeline-cl{
+  background: url("/img/garis-timeline.png");
+  background-size: 70vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #rocket{
   background: #E86E4B;
 }
@@ -515,10 +531,15 @@ color: white;
   border-radius: 50%;
   margin: 0 5em ;
 }
+#circle-cl{
+  margin: 0 5.5em;
+}
+
 
 /* faq section start */
 .faq  h1{
   font-family: "Mosk Extra-bold";
+  font-size: 2.4rem;
 }
 .accordion{
   margin:2em 0;
@@ -781,15 +802,11 @@ footer .container{
   #header-row h1 {
     font-size: 2rem;
   }
-  .navbar-brand{
-    margin: 2px;
-  }
+
   nav ul{
     font-size: 19px;
   }
-  #clabout img{
-
-  }
+  
   .text-coming-soon,
   #slabout #descbox-about .text-coming-soon,
   #clabout #descbox-about .text-coming-soon{
