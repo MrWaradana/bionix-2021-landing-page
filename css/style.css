@@ -517,6 +517,9 @@ color: white;
 }
 
 /* faq section start */
+.faq  h1{
+  font-family: "Mosk Extra-bold";
+}
 .accordion{
   margin:2em 0;
 }
