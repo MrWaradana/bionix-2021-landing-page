@@ -38,14 +38,21 @@
   <!--navbar section-->
 
       <nav class="navbar navbarsl navbar-custom fixed-top navbar-expand-lg container-fluid">
-        <div class="logo"><a class="navbar-brand" href="index.html"><img src="img/logo-ise-2021.svg" alt="logo ISE! 2021" /></a></div>
+        <div class="logo text-left">
+          <a class="navbar-brand" href="index.html"><img src="img/logo-ise-2021.svg" alt="logo ISE! 2021" /></a>
+        </div>
         <div class="collapse navbar-collapse w-100 order-3 dual-collapse2 list" id="collapse_target">
           <ul class="border-0 nav navbar-nav nav-tabs ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="after-login.html">Home</a>
             </li>
+            <li class="nav-item">
               <a href="student-level.html" class="nav-link active">Student Level</a>
+
+            </li>
+            <li class="nav-item">
               <a href="college-level.html" class="nav-link">College Level</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link" id="usernav"><i class="far fa-user"></i> User <i class="fas fa-chevron-down"></i></a>
               <ul class="dropdown-menu">
@@ -110,79 +117,9 @@
       </header>
 
         <!-- tahapan student level section start -->
-        <div class="tahapan text-center" id="tahapan">
+        <div class="tahapan text-center" id="tahapan-large">
           <h1>Tahapan</h1>
-          <div class="bs-stepper linear ">
-            <div class="bs-stepper-header d-lg-flex d-none" role="tablist">
-              <!-- your steps here -->
-              <div class="step" data-target="#logins-part">
-                <h5>Penyisihan Regional</h5>
-                <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
-                  <span class="bs-stepper-circle">1</span>
-                  <span class="bs-stepper-label"></span>
-                </button>
-              </div>
-              <div class="line"></div>
-              <div class="step" data-target="#information-part">
-                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
-                  <span class="bs-stepper-circle">2</span>
-                </button>
-              </div>
-              <div class="line"></div>
-              <div class="step" data-target="#information-part">
-                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
-                  <span class="bs-stepper-circle">3</span>
-                </button>
-              </div>
-              <div class="line"></div>
-              <div class="step" data-target="#information-part">
-                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
-                  <span class="bs-stepper-circle">4</span>
-                </button>
-              </div>
-            </div>
-            <div class="bs-stepper-content">
-              <!-- your steps content here -->
-              <div class="row">
-                <div class="d-flex col-6 col-lg-3">
-                  <div class="card" id="card-tahapan">
-                    <div class="card-body" id="card-body-tahapan">
-                      <h3>Penyisihan Region</h3>
-                      <hr>
-                      <p>Peserta akan berkompetisi melawan tim lain yang berada dalam satu region yang sama. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex col col-lg-3">
-                  <div class="card" id="card-tahapan">
-                    <div class="card-body" id="card-body-tahapan">
-                      <h3>Penyisihan Nasional</h3>
-                      <hr>
-                      <p>Peserta akan berkompetisi melawan tim lain dari seluruh Indonesia. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex col col-lg-3">
-                  <div class="card" id="card-tahapan">
-                    <div class="card-body" id="card-body-tahapan">
-                      <h3>Semifinal</h3>
-                      <hr>
-                      <p> Peserta akan membuat sebuah ide bisnis berdasarkan tema yang telah ditentukan dan menuangkannya dalam bentuk proposal dan video</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex col col-lg-3">
-                  <div class="card" id="card-tahapan">
-                    <div class="card-body" id="card-body-tahapan">
-                      <h3>Final</h3>
-                      <hr>
-                      <p>Tahap terakhir yang harus dilalui setiap peserta. Pada tahap ini, peserta akan mempresentasikan ide bisnis yang telah dibuat sebelumnya di hadapan juri yang kompeten di bidang bisnis dan teknologi informasi</p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <!-- <div class="container-fluid">
+          <div class="container-fluid">
             <div class="row">
               <div class="col">
                 <h5>Penyisihan<br>Regional</h5>
@@ -256,10 +193,56 @@
                   </div>
                 </div>
               </div>
-            </div> 
-          </div>-->
+            </div>
+          </div>
         </div>
         
+        <div class="container py-5" id="tahapan-small">
+      
+              <div class="row">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="tahapan">
+                      <h1 class="mb-5 text-center">Tahapan</h1>
+                    </div>
+
+                      <!-- Timeline -->
+                      <ul class="timeline">
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Penyisihan Region</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
+                              <p class="text-small mt-2 font-weight-light">Peserta akan berkompetisi melawan tim lain yang berada dalam satu region yang sama. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Penyisihan Nasional</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
+                              <p class="text-small mt-2 font-weight-light">Peserta akan berkompetisi melawan tim lain dari seluruh Indonesia. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Semifinal</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
+                              <p class="text-small mt-2 font-weight-light"> Peserta akan membuat sebuah ide bisnis berdasarkan tema yang telah ditentukan dan menuangkannya dalam bentuk proposal dan video</p>
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Final</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+                              <p class="text-small mt-2 font-weight-light">Tahap terakhir yang harus dilalui setiap peserta. Pada tahap ini, peserta akan mempresentasikan ide bisnis yang telah dibuat sebelumnya di hadapan juri yang kompeten di bidang bisnis dan teknologi informasi</p>
+                          </li>
+                      </ul><!-- End -->
+      
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- total hadiah section start -->
         <div class="total-hadiah text-center" id="total-hadiah-sl">
           <h2>Total Hadiah</h2>
@@ -267,7 +250,7 @@
             <div class="tab-pane fade show active" id="hadiahsl" role="tabpanel">
               <div class="container">
                 <div class="row">
-                  <div class="col justify-content-end">
+                  <div class="col-md-4 col-12 justify-content-end">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 3</h4>
@@ -276,7 +259,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col justify-content-center">
+                  <div class="col-md-4 col-12 justify-content-center">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 1</h4>
@@ -285,7 +268,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col justify-content-start">
+                  <div class="col-md-4 col-12 justify-content-start">
                     <div class="card">
                       <div class="card-body">
                         <h4>Juara 2</h4>
@@ -303,6 +286,45 @@
         </div>
 
         <!-- timeline student level section -->
+
+        
+        <div class="container py-5" id="timeline-small">
+      
+              <div class="row">
+                  <div class="col-lg-7 mx-auto">
+                    <div class="tahapan">
+                      <h1 class="mb-5 text-center">Timeline</h1>
+                    </div>
+
+                      <!-- Timeline -->
+                      <ul class="timeline">
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Pendaftaran</h2><span class="small text-gray"><i class="fa fa-clock mr-1"></i> 3 Jul - 20 Sep 2021</span>
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Penyisihan 1</h2><span class="small text-gray"><i class="fa fa-clock mr-1"></i> 26 Sep 2021</span>
+                             
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Penyisihan 2</h2><span class="small text-gray"><i class="fa fa-clock mr-1"></i> 3 Okt 2021</span>
+                              
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Semifinal</h2><span class="small text-"><i class="fa fa-clock mr-1"></i> 5 - 23 Okt 2021</span>
+                              
+                          </li>
+                          <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                              <h2 class="h5 mb-0">Final</h2><span class="small text-gray"><i class="fa fa-clock mr-1"></i> 7 Nov 2021</span>
+                              
+                          </li>
+                      </ul><!-- End -->
+      
+                  </div>
+              </div>
+          </div>
+
+
+
         <div class="timeline text-center" id="timeline-student-level">
           <h1>Timeline</h1>
           <div class="container-fluid">
@@ -377,7 +399,7 @@
           <div class="container">
             <div class="row">
               <div class="accordion" id="accordionFaq">
-                <div class="accordion-item" id="AccordionItemOne" >
+                <div class="accordion-item show" id="AccordionItemOne" >
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Apa saja syarat yang diperlukan untuk mengikuti BIONIX Student Level?
@@ -392,7 +414,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item" id="AccordionItemTwo">
+                <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Fasilitas apa saja yang akan didapatkan oleh peserta?
@@ -407,6 +429,78 @@
                         </li>
                         <li>Workshop pembuatan ide bisnis berbasis IT bersama dengan pemateri yang kompeten pada bidang bisnis</li>
                       </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" id="AccordionItemTwo">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                      Apakah peserta BIONIX Student Level akan mendapatkan sertifikat?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <p>Semua peserta akan mendapatkan sertifikat. Sertifikat akan dikirim via email dalam bentuk e-certificate. Sertifikat ini dapat dicetak sendiri sesuai dengan panduan yang sudah ada.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
+                      Berapa harga pendaftaran BIONIX Student Level?
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <p>Biaya pendaftaran BIONIX Student Level adalah sebesar Rp89.000/tim dengan setiap tim 	terdiri dari maksimal 2 (dua) orang. Harga pendaftaran dapat dikurangi jika calon peserta mendapatkan promo khusus selama masa pendaftaran BIONIX Student Level berlangsung.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                      Bagaimana cara mendaftar BIONIX Student Level?
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <p>Pendaftaran dapat dilakukan secara daring pada web https://bionix.ise-its.com. Langkah-langkah pendaftaran juga sudah ada pada bagian Tata Cara Pendaftaran di dokumen guidebook.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
+                      Apakah peserta boleh mendaftarkan diri lebih dari satu tim di BIONIX Student Level?
+
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <p>Peserta hanya boleh mendaftar di satu tim saja. Jika panitia ISE! 2021 mendeteksi adanya peserta ganda (terdaftar di lebih dari satu tim), maka peserta tersebut akan didiskualifikasi.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseTwo">
+                      Apakah tim BIONIX Student Level boleh terdiri atas lintas tahun angkatan ataupun berbeda jenis kelamin?
+
+                    </button>
+                  </h2>
+                  <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+                    <div class="accordion-body">
+                      <p>Ya, tim diperbolehkan terdiri atas lintas tahun angkatan maupun berbeda jenis kelamin asalkan tim tersebut berasal dari sekolah yang sama.
+                      </p>
                       
                     </div>
                   </div>

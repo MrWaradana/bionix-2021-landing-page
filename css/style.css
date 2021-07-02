@@ -63,7 +63,7 @@
   font-size: 1.28rem;
 }
 #navbar2{
-  z-index: 99;
+  z-index: 999;
   margin-top: 4.7em;
   background: rgba(211, 211, 211, 0.65);
 }
@@ -102,12 +102,11 @@
 .navbar-custom{
   height: 100px;
 }
-.navbar-brand{
-  width: 120px;
-  height: auto;
-  margin-left: 80px;
+.navbar .logo{
+  width: 5em;
   transition: all 0.3s ease;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -151,13 +150,11 @@
 .navbar .nav-item .dropdown-menu{
   background: #E9E8E1;
   max-height: 0;
-  display: block;
-  overflow: hidden;
+  display: flexbox;
   opacity: 0;
   visibility: hidden;
   border-radius: 8px;
   padding: 1rem;
-  margin-top: 3em;
   -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
     -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
     -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
@@ -169,6 +166,7 @@
   max-height: 190px;
   opacity: 1;
   visibility: visible;
+  margin-top: 2.3em;
   -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
   -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
   -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
@@ -204,7 +202,7 @@
   font-weight: 300;
   color: white;
   padding: 12px 40px 10px 40px;
-  margin: 48px 48px 48px 27px;
+  margin: 48px;
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -222,13 +220,13 @@
   cursor: pointer;
 }
 #usernav{
-  margin-right: 6rem;
+  margin-right: 3em;
 }
 
 /* swiper section start */
 
 .swiper-container {
-  width: 99.4vw;
+  width: 98.9vw;
   height: 100vh;
   margin-top: 7%;
 }
@@ -307,7 +305,25 @@ color: white;
 }
 
 /* tahapan sl section start */
+#tahapan-large{
+  display: none;
+}
 
+@media (min-width:1485px) {
+  #tahapan-large{
+    display: block;
+  }
+}
+
+#tahapan-small{
+  display: block;
+}
+
+@media (min-width:1485px) {
+  #tahapan-small{
+    display: none;
+  }
+}
 .tahapan h1{
   font-family: "Mosk Extra-bold";
   font-size: 2.7rem;
@@ -316,18 +332,18 @@ color: white;
 
 .nomor{
   border-radius: 50%;
-  margin: 0 8.9em ;
   width: 4em;
   height: 4em;
   background: white;
   border: 8px solid #ECD0C8;
+  margin-left: 40%;
 }
 #nomor-college{
   margin: 0 11em;
 }
 
 .nomor h3{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: "Mosk Extra-bold";
   padding: 0.6rem 1rem;
 }
@@ -353,7 +369,7 @@ color: white;
 }
 #card-body-tahapan h3{
   font-family: "Hind Semi Bold";
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   margin-top: 1em;
 }
@@ -460,9 +476,6 @@ color: white;
   margin-top: 2rem;
 }
 
-.card-body{
-  margin: 0 2rem;
-}
 
 .card h4{
   font-family: "Hind Bold";
@@ -504,7 +517,7 @@ color: white;
   font-family: "Hind Semi Bold";
   font-size: 1.3rem;
   letter-spacing: 1px;
-  margin: 1em;
+  margin: 20%;
 }
 #circle-timeline{
   background: url("/img/garis-timeline.png");
@@ -530,14 +543,31 @@ color: white;
   background: white;
   border: 8px solid #ECD0C8;
   border-radius: 50%;
-  margin: 0 5em ;
+  margin: 0 40% ;
 }
 #circle-cl{
   margin: 0 5.5em;
 }
-
-
+#timeline-student-level{
+  display: none;
+}
+@media (min-width:1487px){
+  #timeline-student-level{
+    display: block;
+  }
+}
+#timeline-small{
+  display: block;
+}
+@media (min-width:1487px){
+  #timeline-small{
+    display: none;
+  }
+}
 /* faq section start */
+.faq{
+  min-height: 100vh;
+}
 .faq  h1{
   font-family: "Mosk Extra-bold";
   font-size: 2.4rem;
@@ -578,13 +608,9 @@ color: white;
   font-family: "Hind Normal";
   font-size: 1.3rem;
   background: transparent !important;
+  margin-bottom: 1%;
 }
-#AccordionItemOne{
-  margin-bottom: 1em;
-}
-#AccordionItemTwo{
-  margin-bottom: 8em;
-}
+
 /* swiper bottom section start */
 .swiper-bottom{
   background: url("/img/Planet-swiper.svg");
@@ -747,6 +773,9 @@ footer .container{
   color: black;
   text-decoration: none;
 }
+#footer-right a{
+  color: transparent;
+}
 .footer hr{
   border-top: 1px solid rgba(209, 108, 108, 0.45) ;
 }
@@ -778,27 +807,38 @@ footer .container{
     text-align: left;
   }
   .navbar .navbar-collapse{
-    background: #fb5f57;
+    background: #E9E8E1;
     border-radius: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+  }
+  .navbar .navbar-collapse a{
+    text-align: center;
   }
   .navbar .list:focus{
     top: 1rem;
+  }
+  .navbar .nav-item .dropdown-menu{
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu{
+    margin-top: 0;
   }
   .navbar .menu-btn{
     border-radius: 1rem;
     padding-top: 0.5rem;
     display: block;
     font-size: 1.5rem;
-    color:white;
-    background: linear-gradient(90deg, rgba(54, 74, 130, 0.8), rgba(40, 91, 112, 1), rgba(50, 135, 150, 0.8));
+    background: #E9E8E1;
     outline: none;
     border-style: outset;
-    border: 1px solid grey;
+    border: none;
   }
   .navbar .menu-btn:active{
     border-style: outset;
     border: none;
+  }
+  #usernav{
+    margin: 0;
   }
   
 }
@@ -814,3 +854,66 @@ footer .container{
 @media (max-width: 426px){
 
 }
+
+
+
+
+/* vertical timeline section */
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #fb5f57;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #ECD0C8;
+  left: -.5em;
+  width: 3em;
+  height: 3em;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
