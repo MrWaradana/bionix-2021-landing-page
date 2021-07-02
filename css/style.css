@@ -566,7 +566,10 @@ color: white;
 }
 /* faq section start */
 .faq{
-  min-height: 100vh;
+  min-height: 190vh;
+}
+#faqcl{
+  min-height: 80vh;
 }
 .faq  h1{
   font-family: "Mosk Extra-bold";
@@ -882,8 +885,18 @@ ul.timeline:before {
 
 li.timeline-item {
   margin: 20px 0;
+  background: #F4EDE5;
 }
-
+li.timeline-item h2{
+  font-family: "Hind Semi bold";
+}
+li.timeline-item p{
+  font-family: "Hind Regular";
+}
+li.timeline-item span{
+  font-family: "Hind Bold";
+  font-size: larger;
+}
 /* Timeline item arrow */
 .timeline-arrow {
   border-top: 0.5rem solid transparent;
