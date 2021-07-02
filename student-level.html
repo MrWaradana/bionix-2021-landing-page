@@ -16,6 +16,7 @@
   <link rel="icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/bs-stepper.min.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/normalize.min.css" />
   <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome-all.min.css" />
@@ -68,8 +69,8 @@
 
       
       <nav class="navbar navbarsl navbar-custom fixed-top navbar-expand-lg container-fluid" id="navbar2">
-        <div class="collapse navbar-collapse w-100 order-3 dual-collapse2 list" id="collapse_target">
-          <ul class="border-0 nav navbar-nav nav-tabs ml-5">
+
+          <ul class="nav ml-5">
             <li class="nav-item">
               <a class="nav-link" href="#tahapan">Tahapan</a>
             </li>
@@ -88,10 +89,7 @@
           </ul>
           <a href="#" class="nav-link" id="daftar">Daftar</a>
           <a href="#" class="nav-link" id="guidebook"><img src="/img/DownloadSimple.svg" alt=""> Guidebook</a>
-        </div>
-        <button class="navbar-toggle menu-btn mr-5" data-bs-toggle="collapse" data-bs-target="#collapse_target">
-          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
+
       </nav>
 
 
@@ -114,7 +112,77 @@
         <!-- tahapan student level section start -->
         <div class="tahapan text-center" id="tahapan">
           <h1>Tahapan</h1>
-          <div class="container-fluid">
+          <div class="bs-stepper linear ">
+            <div class="bs-stepper-header d-lg-flex d-none" role="tablist">
+              <!-- your steps here -->
+              <div class="step" data-target="#logins-part">
+                <h5>Penyisihan Regional</h5>
+                <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+                  <span class="bs-stepper-circle">1</span>
+                  <span class="bs-stepper-label"></span>
+                </button>
+              </div>
+              <div class="line"></div>
+              <div class="step" data-target="#information-part">
+                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                  <span class="bs-stepper-circle">2</span>
+                </button>
+              </div>
+              <div class="line"></div>
+              <div class="step" data-target="#information-part">
+                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                  <span class="bs-stepper-circle">3</span>
+                </button>
+              </div>
+              <div class="line"></div>
+              <div class="step" data-target="#information-part">
+                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                  <span class="bs-stepper-circle">4</span>
+                </button>
+              </div>
+            </div>
+            <div class="bs-stepper-content">
+              <!-- your steps content here -->
+              <div class="row">
+                <div class="d-flex col-6 col-lg-3">
+                  <div class="card" id="card-tahapan">
+                    <div class="card-body" id="card-body-tahapan">
+                      <h3>Penyisihan Region</h3>
+                      <hr>
+                      <p>Peserta akan berkompetisi melawan tim lain yang berada dalam satu region yang sama. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex col col-lg-3">
+                  <div class="card" id="card-tahapan">
+                    <div class="card-body" id="card-body-tahapan">
+                      <h3>Penyisihan Nasional</h3>
+                      <hr>
+                      <p>Peserta akan berkompetisi melawan tim lain dari seluruh Indonesia. Peserta akan mengerjakan soal pilihan ganda berdasarkan lima bidang keilmuan sistem informasi dengan jumlah 100 soal</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex col col-lg-3">
+                  <div class="card" id="card-tahapan">
+                    <div class="card-body" id="card-body-tahapan">
+                      <h3>Semifinal</h3>
+                      <hr>
+                      <p> Peserta akan membuat sebuah ide bisnis berdasarkan tema yang telah ditentukan dan menuangkannya dalam bentuk proposal dan video</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex col col-lg-3">
+                  <div class="card" id="card-tahapan">
+                    <div class="card-body" id="card-body-tahapan">
+                      <h3>Final</h3>
+                      <hr>
+                      <p>Tahap terakhir yang harus dilalui setiap peserta. Pada tahap ini, peserta akan mempresentasikan ide bisnis yang telah dibuat sebelumnya di hadapan juri yang kompeten di bidang bisnis dan teknologi informasi</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- <div class="container-fluid">
             <div class="row">
               <div class="col">
                 <h5>Penyisihan<br>Regional</h5>
@@ -188,8 +256,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div>-->
         </div>
         
         <!-- total hadiah section start -->
@@ -355,10 +423,10 @@
         <footer class="footer">
           <div class="container" id="footer">
             <div class="row">
-              <div class="col-12 col-sm-6 text-sm-start">
+              <div class="col-sm-6 text-center text-sm-start">
                 <img src="/img/logo-ise-2021-putih.svg" alt="logo ise 2021" class="img-fluid" width="120px" height="auto">
               </div>
-              <div class="col-12 col-sm-6 text-sm-end" id="footer-right">
+              <div class="col-sm-6 text-md-end text-left" id="footer-right">
                 <h1>Temukan Kami di Sosial Media!</h1>
                 <div class="listsocmed">
                   <a href="https://ise-its.com/" target="_blank" title="Website">
@@ -395,14 +463,14 @@
                   <li><a href="#">Merch</a></li>
                 </ul>
               </div>
-              <div class="col col-sm-3 text-sm-left">
+              <div class="col col-sm-3 text-sm-start">
                 <ul>
                   <p><strong>Bionix</strong></p>
                   <li><a href="#">Bionix Student Level</a></li>
                   <li><a href="#">Bionix College Level</a></li>
                 </ul>
               </div>
-              <div class="col col-sm-3 text-sm-left">
+              <div class="col col-sm-3 text-sm-start">
                 <ul>
                   <p><strong>ICON</strong></p>
                   <li><a href="#">ICON Academy</a></li>
@@ -411,7 +479,7 @@
                   <li><a href="#">Virtual Intern & Job Fair</a></li>
                 </ul>
               </div>
-              <div class="col col-sm-3 text-sm-left shop">
+              <div class="col col-sm-3 text-sm-start shop">
                 <ul>
                   <p><strong>SHOP</strong></p>
                   <li><a href="#">Merchandise<i class="fas fa-external-link-alt"></i></a></li>
@@ -429,6 +497,7 @@
       
 
   <!--Script-->
+  <script src="js/bs-stepper.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

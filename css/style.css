@@ -38,7 +38,7 @@
   width: 100%;
   height: 100%;
 }
-::-webkit-scrollbar-track
+/* ::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.1);
 	background-color: #F5F5F5;
@@ -52,7 +52,7 @@
 ::-webkit-scrollbar-thumb
 {
 	background-color: #fb5f57;	
-}
+} */
 
 
 /* navbar section start */
@@ -67,6 +67,7 @@
   margin-top: 4.7em;
   background: rgba(211, 211, 211, 0.65);
 }
+
 #navbar2 #daftar{
   margin-left: auto;
   background: #FF726B;
@@ -333,7 +334,7 @@ color: white;
 
 #garis-tahapan{
   background: url("/img/garis-row-tahapan.svg");
-  background-size: 70vw;
+  background-size: 75vw;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -756,9 +757,21 @@ footer .container{
 }
 /* CSS Media Query */
 @media (max-width: 1200px) {
-
+  #navbar2{
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  #navbar2 .nav{
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
 }
 @media (max-width: 992px) {
+  #navbar2 .nav{
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
   .navbar .nav-item:hover{
     display: block;
     position: relative;
