@@ -572,6 +572,69 @@ color: white;
     display: none;
   }
 }
+
+
+/* vertical timeline section */
+
+/* Timeline holder */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Timeline vertical line */
+ul.timeline:before {
+  content: ' ';
+  background: #fb5f57;
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  width: 4px;
+  height: 100%;
+  z-index: 400;
+  border-radius: 1rem;
+}
+
+li.timeline-item {
+  margin: 20px 0;
+  background: #F4EDE5;
+}
+li.timeline-item h2{
+  font-family: "Hind Semi bold";
+}
+li.timeline-item p{
+  font-family: "Hind Regular";
+}
+li.timeline-item span{
+  font-family: "Hind Bold";
+  font-size: larger;
+}
+/* Timeline item arrow */
+.timeline-arrow {
+  border-top: 0.5rem solid transparent;
+  border-right: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid transparent;
+  display: block;
+  position: absolute;
+  left: 2rem;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 8px solid #ECD0C8;
+  left: -.5em;
+  width: 3em;
+  height: 3em;
+  z-index: 400;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 /* faq section start */
 .faq{
   min-height: 190vh;
@@ -901,66 +964,7 @@ footer .container{
 
 
 
-/* vertical timeline section */
 
-/* Timeline holder */
-ul.timeline {
-  list-style-type: none;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-/* Timeline vertical line */
-ul.timeline:before {
-  content: ' ';
-  background: #fb5f57;
-  display: inline-block;
-  position: absolute;
-  left: 16px;
-  width: 4px;
-  height: 100%;
-  z-index: 400;
-  border-radius: 1rem;
-}
-
-li.timeline-item {
-  margin: 20px 0;
-  background: #F4EDE5;
-}
-li.timeline-item h2{
-  font-family: "Hind Semi bold";
-}
-li.timeline-item p{
-  font-family: "Hind Regular";
-}
-li.timeline-item span{
-  font-family: "Hind Bold";
-  font-size: larger;
-}
-/* Timeline item arrow */
-.timeline-arrow {
-  border-top: 0.5rem solid transparent;
-  border-right: 0.5rem solid #fff;
-  border-bottom: 0.5rem solid transparent;
-  display: block;
-  position: absolute;
-  left: 2rem;
-}
-
-/* Timeline item circle marker */
-li.timeline-item::before {
-  content: ' ';
-  background: white;
-  display: inline-block;
-  position: absolute;
-  border-radius: 50%;
-  border: 8px solid #ECD0C8;
-  left: -.5em;
-  width: 3em;
-  height: 3em;
-  z-index: 400;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
 
 
 
