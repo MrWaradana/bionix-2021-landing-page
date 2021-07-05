@@ -78,7 +78,7 @@
   letter-spacing: 2px;
 }
 #navbar2 #guidebook{
-  background: #C37976;
+  background: #FF726B ;
   margin-right: 4em;
   margin-left: 2em;
   border-radius: 8px;
@@ -440,7 +440,8 @@ color: white;
 }
 
 /* total hadiah section start */
-#total-hadiah-sl{
+#total-hadiah-sl,
+#total-hadiah-cl{
   margin-top: 8em;
   margin-bottom: 10em ;
 }
@@ -548,6 +549,13 @@ color: white;
 #circle-cl{
   margin: 0 5.5em;
 }
+#inside-circle{
+  height: 2em;
+  width: 2em;
+  background:white;
+  margin: 17%;
+  border-radius: 50%;
+}
 #timeline-student-level{
   display: none;
 }
@@ -615,63 +623,66 @@ color: white;
 }
 
 /* swiper bottom section start */
-.swiper-bottom{
-  background: url("/img/Planet-swiper.svg");
+.swiper-bottom {
+  background: url("/img/bionix/Planet-swiper.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
 }
 
-.swiper-2{
-  height: 100vh;
+.swiper-2 {
+  min-height: 100vh;
 }
 
-.swiper-bottom .title{
+.swiper-bottom .title {
   font-family: "Mosk Extra-bold";
 }
 
-.swiper-bottom .desc h2{
+.swiper-bottom .desc h2 {
   font-family: "Hind Semi Bold";
   margin: 3rem 3rem 2rem 3rem;
 }
 
-.swiper-bottom .desc p{
+.swiper-bottom .desc p {
   font-family: "Hind Regular";
   margin: 0 3rem 1rem 3rem;
 }
 
-.swiper-bottom .desc h4{
+.swiper-bottom .desc h4 {
   font-family: "Hind Semi Bold";
   margin: 0 3rem 1rem 3rem;
   font-size: 1rem;
 }
 
-.swiper-bottom .desc h4 span{
- opacity: 65%;
+.swiper-bottom .desc h4 span {
+  opacity: 65%;
 }
 
-.content{
+.content {
   background: #F4EDE5;
-  height: 60vh;
+  min-height: 60vh;
   border-radius: 2rem;
   margin: 5%;
 }
-.img-nabila{
+
+.img-nabila {
   background: url("/img/nabila.png");
   background-size: cover;
   border-radius: 2rem;
-  height: 60vh;
+  height: 100%;
 }
 
-.img-arif{
+.img-arif {
   background: url("/img/arif.png");
   background-size: cover;
   border-radius: 2rem;
-  height: 60vh;
+  height: 100%;
 }
 
-.content span{
+.content span {
   color: #FF726B;
 }
+
+
 
 
 
@@ -734,6 +745,12 @@ color: white;
 .footer {
   background: #FFE1B4;
   max-width: 100%;
+}
+#footer-right .listsocmed i:hover{
+  color: #E86E4B ;
+}
+#footer-link li a:hover{
+  color: #E86E4B;
 }
 footer .container{
   position:relative;
@@ -845,12 +862,35 @@ footer .container{
   }
   
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .slide1 h1 {
+      font-size: 2rem;
+  }
 
+  .img-nabila {
+      height: 70vh;
+      border-bottom-right-radius: .25rem !important;
+      border-bottom-left-radius: .25rem !important;
+      border-top-right-radius: 2rem !important;
+      background-position: center;
+  }
+  .img-arif {
+      height: 70vh;
+      border-bottom-right-radius: .25rem !important;
+      border-bottom-left-radius: .25rem !important;
+      border-top-right-radius: 2rem !important;
+      background-position: center;
+  }
   
 }
 @media (max-width: 576px) {
+  .img-nabila {
+    height: 70vh;
+}
 
+  .img-arif {
+      height: 70vh;
+  }
  
 }
 
