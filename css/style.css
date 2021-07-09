@@ -38,21 +38,22 @@
   width: 100%;
   height: 100%;
 }
-/* ::-webkit-scrollbar-track
+::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.1);
 	background-color: #F5F5F5;
 }
 ::-webkit-scrollbar
 {
-	width: 10px;
-	background-color: #F5F5F5;
+	width: 7px;
+  height: 5px;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb
 {
 	background-color: #fb5f57;	
-} */
+}
 
 
 /* navbar section start */
@@ -809,8 +810,14 @@ li.timeline-item::before {
   background: #FFE1B4;
   max-width: 100%;
 }
+#footer-right .listsocmed i{
+  transition: all .2s ease-in;
+}
 #footer-right .listsocmed i:hover{
   color: #E86E4B ;
+}
+#footer-link li a{
+  transition: all .2s ease-in;
 }
 #footer-link li a:hover{
   color: #E86E4B;
