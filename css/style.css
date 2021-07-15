@@ -45,14 +45,13 @@
 }
 ::-webkit-scrollbar
 {
-	width: 7px;
   height: 5px;
 	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #fb5f57;	
+  background-color: #fb5f57;	
 }
 
 
