@@ -32,7 +32,7 @@
 
 /*general*/
 .bg{
-  background-image: url("img/background-bionix.svg");
+  background-image: url("../img/background-bionix.svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -237,7 +237,7 @@
 }
 
 .slide1{
-  background: url("img/bg-slide1.svg");
+  background: url("../img/bg-slide1.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -278,7 +278,7 @@ color: white;
 .header {
   padding-top: 15em;
   margin-bottom: 8em;
-  background: url("img/header-sl.png");
+  background: url("../img/header-sl.png");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 85vh;
@@ -350,13 +350,13 @@ color: white;
 }
 
 #garis-tahapan{
-  background: url("img/garis-row-tahapan.svg");
+  background: url("../img/garis-row-tahapan.svg");
   background-size: 75vw;
   background-repeat: no-repeat;
   background-position: center;
 }
 #garis-tahapancl{
-  background: url("img/garis-row-tahapan.svg");
+  background: url("../img/garis-row-tahapan.svg");
   background-size: 60vw;
   background-repeat: no-repeat;
   background-position: center;
@@ -388,7 +388,7 @@ color: white;
 
 /* kategori lomba start */
 .kategori-lomba{
-  background: url("img/awan-bg-kategori-lomba.svg");
+  background: url("../img/awan-bg-kategori-lomba.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -407,7 +407,7 @@ color: white;
   letter-spacing: 0.1rem;
 }
 .bionix-sl{
-  background: url("img/card-bionix-sl.png");
+  background: url("../img/card-bionix-sl.png");
   background-size: cover;
   border-radius: 1.5em;
   margin: 8% 0%;
@@ -417,7 +417,7 @@ color: white;
   box-shadow: 0 0 5px grey ;
 }
 .bionix-cl{
-  background: url("img/card-bionix-cl.png");
+  background: url("../img/card-bionix-cl.png");
   background-size: cover; 
   border-radius: 1.5em;
   margin: 8% 0;
@@ -522,13 +522,13 @@ color: white;
   margin: 20%;
 }
 #circle-timeline{
-  background: url("img/garis-timeline.png");
+  background: url("../img/garis-timeline.png");
   background-size: 80vw;
   background-repeat: no-repeat;
   background-position: center;
 }
 #circle-timeline-cl{
-  background: url("img/garis-timeline.png");
+  background: url("../img/garis-timeline.png");
   background-size: 70vw;
   background-repeat: no-repeat;
   background-position: center;
@@ -688,7 +688,7 @@ li.timeline-item::before {
 
 /* swiper bottom section start */
 .swiper-bottom {
-  background: url("img/bionix/Planet-swiper.svg");
+  background: url("../img/bionix/Planet-swiper.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
 }
@@ -729,14 +729,14 @@ li.timeline-item::before {
 }
 
 .img-nabila {
-  background: url("img/nabila.png");
+  background: url("../img/nabila.png");
   background-size: cover;
   border-radius: 2rem;
   height: 100%;
 }
 
 .img-arif {
-  background: url("img/arif.png");
+  background: url("../img/arif.png");
   background-size: cover;
   border-radius: 2rem;
   height: 100%;
@@ -774,7 +774,7 @@ li.timeline-item::before {
 
 /* error page section start */
 .error-content{
-  background: url("img/404-screen.png");
+  background: url("../img/404-screen.png");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 60vh;
